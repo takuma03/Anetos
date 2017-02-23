@@ -20,6 +20,8 @@
 		0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74421E2BC83400935D3A /* TopViewController.swift */; };
 		0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74441E2BC9C100935D3A /* LoginViewController.swift */; };
 		0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */; };
+		0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */; };
+		0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D261E5DB7B500A23742 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		0FCC74421E2BC83400935D3A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		0FCC74441E2BC9C100935D3A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0FDF4D261E5DB7B500A23742 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +116,9 @@
 				0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */,
 				0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */,
 				0FCC74161E2BBE4D00935D3A /* SecondViewController.swift */,
+				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
+				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
 				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
 				0F02E8081E2CA9D400674D76 /* TestViewController.swift */,
 				0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */,
@@ -278,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */,
 				0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */,
 				0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
+				0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */,
 				0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */,
 				0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
