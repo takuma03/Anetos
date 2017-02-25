@@ -110,8 +110,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath) as! CustomTableViewCell
         
-        print(cell)
-        
+
         cell.setCell(cloth: clothes[indexPath.row])
         
         return cell

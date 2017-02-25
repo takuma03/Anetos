@@ -22,6 +22,9 @@
 		0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */; };
 		0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */; };
 		0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D261E5DB7B500A23742 /* Model.swift */; };
+		7E985F61950256A03949FDD9 /* Pods_AnetosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */; };
+		A66C204013758CD2E9A6B58F /* Pods_AnetosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */; };
+		B71AA357AF55CB015F38C6F8 /* Pods_Anetos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnetosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F02E8081E2CA9D400674D76 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTopsViewController.swift; sourceTree = "<group>"; };
 		0FCC740F1E2BBE4D00935D3A /* Anetos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anetos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,8 +65,17 @@
 		0FCC74421E2BC83400935D3A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		0FCC74441E2BC9C100935D3A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0FCD1D351E61642B00311FD7 /* Anetos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anetos-Bridging-Header.h"; sourceTree = "<group>"; };
 		0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0FDF4D261E5DB7B500A23742 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnetosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368C56A4476B5C7B67E8C763 /* Pods-AnetosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FF0F6159BE1A4A01A080BFA /* Pods-Anetos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anetos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anetos/Pods-Anetos.debug.xcconfig"; sourceTree = "<group>"; };
+		80D15F63B7A9E777E4B7FC94 /* Pods-AnetosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9572831A63523F6BAEE5F371 /* Pods-Anetos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anetos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anetos/Pods-Anetos.release.xcconfig"; sourceTree = "<group>"; };
+		9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anetos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2CF39847B1A9C0BD38EE34 /* Pods-AnetosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC6527C23B816560BC1E0C3D /* Pods-AnetosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71AA357AF55CB015F38C6F8 /* Pods_Anetos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E985F61950256A03949FDD9 /* Pods_AnetosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66C204013758CD2E9A6B58F /* Pods_AnetosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +109,13 @@
 		0FCC74061E2BBE4C00935D3A = {
 			isa = PBXGroup;
 			children = (
+				0FCD1D351E61642B00311FD7 /* Anetos-Bridging-Header.h */,
 				0FCC74111E2BBE4D00935D3A /* Anetos */,
 				0FCC74281E2BBE4D00935D3A /* AnetosTests */,
 				0FCC74331E2BBE4D00935D3A /* AnetosUITests */,
 				0FCC74101E2BBE4D00935D3A /* Products */,
+				C27EA98AD09889FCA0FDCAB6 /* Pods */,
+				581E14516B50F575DADFDE22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +168,29 @@
 			path = AnetosUITests;
 			sourceTree = "<group>";
 		};
+		581E14516B50F575DADFDE22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */,
+				0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */,
+				2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C27EA98AD09889FCA0FDCAB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FF0F6159BE1A4A01A080BFA /* Pods-Anetos.debug.xcconfig */,
+				9572831A63523F6BAEE5F371 /* Pods-Anetos.release.xcconfig */,
+				80D15F63B7A9E777E4B7FC94 /* Pods-AnetosTests.debug.xcconfig */,
+				FC6527C23B816560BC1E0C3D /* Pods-AnetosTests.release.xcconfig */,
+				368C56A4476B5C7B67E8C763 /* Pods-AnetosUITests.debug.xcconfig */,
+				DA2CF39847B1A9C0BD38EE34 /* Pods-AnetosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FCC74391E2BBE4D00935D3A /* Build configuration list for PBXNativeTarget "Anetos" */;
 			buildPhases = (
+				59E0CBBB172065C7EE34DBDA /* [CP] Check Pods Manifest.lock */,
 				0FCC740B1E2BBE4C00935D3A /* Sources */,
 				0FCC740C1E2BBE4C00935D3A /* Frameworks */,
 				0FCC740D1E2BBE4C00935D3A /* Resources */,
+				CE2756084FBF602A94D5BFAF /* [CP] Embed Pods Frameworks */,
+				B9859688F79613FBBE14AE7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FCC743C1E2BBE4D00935D3A /* Build configuration list for PBXNativeTarget "AnetosTests" */;
 			buildPhases = (
+				2283F580CDBE9E9172D50089 /* [CP] Check Pods Manifest.lock */,
 				0FCC74211E2BBE4D00935D3A /* Sources */,
 				0FCC74221E2BBE4D00935D3A /* Frameworks */,
 				0FCC74231E2BBE4D00935D3A /* Resources */,
+				9EA2FE29EE65C6291161841D /* [CP] Embed Pods Frameworks */,
+				78C258B04D0661F10B5E1A5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FCC743F1E2BBE4D00935D3A /* Build configuration list for PBXNativeTarget "AnetosUITests" */;
 			buildPhases = (
+				D4E17D4F0C607CEF266C1F89 /* [CP] Check Pods Manifest.lock */,
 				0FCC742C1E2BBE4D00935D3A /* Sources */,
 				0FCC742D1E2BBE4D00935D3A /* Frameworks */,
 				0FCC742E1E2BBE4D00935D3A /* Resources */,
+				0C99C4083684F913E4CA5D8B /* [CP] Embed Pods Frameworks */,
+				9C52215BCCE1D68A7CD0A83B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +329,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C99C4083684F913E4CA5D8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2283F580CDBE9E9172D50089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59E0CBBB172065C7EE34DBDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78C258B04D0661F10B5E1A5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C52215BCCE1D68A7CD0A83B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA2FE29EE65C6291161841D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9859688F79613FBBE14AE7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anetos/Pods-Anetos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2756084FBF602A94D5BFAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anetos/Pods-Anetos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E17D4F0C607CEF266C1F89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FCC740B1E2BBE4C00935D3A /* Sources */ = {
@@ -441,6 +630,7 @@
 		};
 		0FCC743A1E2BBE4D00935D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF0F6159BE1A4A01A080BFA /* Pods-Anetos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -449,12 +639,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SaitoTakuma.Anetos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Anetos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0FCC743B1E2BBE4D00935D3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9572831A63523F6BAEE5F371 /* Pods-Anetos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -463,12 +655,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SaitoTakuma.Anetos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Anetos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		0FCC743D1E2BBE4D00935D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D15F63B7A9E777E4B7FC94 /* Pods-AnetosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +677,7 @@
 		};
 		0FCC743E1E2BBE4D00935D3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6527C23B816560BC1E0C3D /* Pods-AnetosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +692,7 @@
 		};
 		0FCC74401E2BBE4D00935D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368C56A4476B5C7B67E8C763 /* Pods-AnetosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AnetosUITests/Info.plist;
@@ -510,6 +706,7 @@
 		};
 		0FCC74411E2BBE4D00935D3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2CF39847B1A9C0BD38EE34 /* Pods-AnetosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AnetosUITests/Info.plist;
