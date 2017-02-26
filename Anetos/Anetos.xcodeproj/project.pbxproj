@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */; };
 		0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E8081E2CA9D400674D76 /* TestViewController.swift */; };
 		0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */; };
 		0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnetosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCellViewController.swift; sourceTree = "<group>"; };
 		0F02E8081E2CA9D400674D76 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTopsViewController.swift; sourceTree = "<group>"; };
 		0FCC740F1E2BBE4D00935D3A /* Anetos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anetos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
+				0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */,
 				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
 				0F02E8081E2CA9D400674D76 /* TestViewController.swift */,
 				0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */,
@@ -476,6 +479,7 @@
 				0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */,
 				0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */,
 				0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */,
+				0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
 				0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */,
