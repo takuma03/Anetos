@@ -25,12 +25,7 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     func setCell(cloth :Cloth) {
-//        do{
-//            let imageData :NSData = try NSData(contentsOf: cloth.imageUrl! as URL,options: NSData.ReadingOptions.mappedIfSafe)
-//            self.clothImage.image = UIImage(data:imageData as Data)
-//        }catch{
-//            
-//        }
+
         clothImage.sd_setImage(with: cloth.imageUrl as URL?)
         
         

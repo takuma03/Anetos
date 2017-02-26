@@ -24,7 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //タグ名初期設定
     var tag_name: String = ""
-
+    
+    //ユーザーの洋服ID格納用配列初期設定
+    var cloth_array: Array<String> = []
+    
+    
+    //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -52,7 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
-
+    
+    //バッググウンドからアプリが起動された際の処理
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         if(token==""){
