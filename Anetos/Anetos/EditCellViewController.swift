@@ -13,6 +13,13 @@ class EditCellViewController: UIViewController {
     @IBOutlet weak var selectCloth: UIImageView!
     var selectedID: String!
     
+    //TODO
+    //削除ボタンを押下したときの処理
+    @IBAction func deleteCloth(_ sender: Any) {
+        print("削除しました。")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

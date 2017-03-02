@@ -53,7 +53,7 @@
         <!--クローゼット-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Closet" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -70,7 +70,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1u3-f5-pd7" id="Bro-kA-b5A">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugt-bZ-GiS">
@@ -150,6 +150,17 @@
                                 <state key="normal" title="←"/>
                                 <connections>
                                     <segue destination="ZMS-j5-B34" kind="unwind" unwindAction="unwindToClosetWithSegue:" id="DHy-55-ioH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGd-5c-Boz">
+                                <rect key="frame" x="172" y="476" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="削除">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteCloth:" destination="3HH-Sg-K49" eventType="touchUpInside" id="Dsg-sX-C4X"/>
+                                    <segue destination="ZMS-j5-B34" kind="unwind" unwindAction="unwindToClosetWithSegue:" id="BBx-tO-G82"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -277,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="-126" y="1154"/>
         </scene>
-        <!--設定-->
+        <!--その他-->
         <scene sceneID="jUW-Yx-6w0">
             <objects>
                 <viewController id="ave-Wm-KCN" sceneMemberID="viewController">
@@ -290,7 +301,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" image="second" id="yc0-dz-VgG"/>
+                    <tabBarItem key="tabBarItem" title="その他" image="second" id="yc0-dz-VgG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvo-Fa-I7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
