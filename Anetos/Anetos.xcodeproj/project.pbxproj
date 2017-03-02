@@ -23,6 +23,12 @@
 		0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */; };
 		0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */; };
 		0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D261E5DB7B500A23742 /* Model.swift */; };
+		0FF4E0B31E67E65100469F28 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0B21E67E65100469F28 /* OtherViewController.swift */; };
+		0FF4E0B51E67E9FD00469F28 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0B41E67E9FD00469F28 /* SettingViewController.swift */; };
+		0FF4E0B71E67FA7800469F28 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0B61E67FA7800469F28 /* FAQViewController.swift */; };
+		0FF4E0B91E67FED400469F28 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0B81E67FED400469F28 /* GuideViewController.swift */; };
+		0FF4E0BB1E68006100469F28 /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0BA1E68006100469F28 /* InquiryViewController.swift */; };
+		0FF4E0BD1E6809D900469F28 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0BC1E6809D900469F28 /* AboutViewController.swift */; };
 		7E985F61950256A03949FDD9 /* Pods_AnetosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */; };
 		A66C204013758CD2E9A6B58F /* Pods_AnetosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */; };
 		B71AA357AF55CB015F38C6F8 /* Pods_Anetos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */; };
@@ -70,6 +76,12 @@
 		0FCD1D351E61642B00311FD7 /* Anetos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anetos-Bridging-Header.h"; sourceTree = "<group>"; };
 		0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0FDF4D261E5DB7B500A23742 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0FF4E0B21E67E65100469F28 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		0FF4E0B41E67E9FD00469F28 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0FF4E0B61E67FA7800469F28 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		0FF4E0B81E67FED400469F28 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		0FF4E0BA1E68006100469F28 /* InquiryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
+		0FF4E0BC1E6809D900469F28 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnetosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368C56A4476B5C7B67E8C763 /* Pods-AnetosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF0F6159BE1A4A01A080BFA /* Pods-Anetos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anetos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anetos/Pods-Anetos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,8 +151,14 @@
 				0FCC74161E2BBE4D00935D3A /* SecondViewController.swift */,
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
+				0FF4E0B61E67FA7800469F28 /* FAQViewController.swift */,
+				0FF4E0B41E67E9FD00469F28 /* SettingViewController.swift */,
+				0FF4E0B21E67E65100469F28 /* OtherViewController.swift */,
+				0FF4E0B81E67FED400469F28 /* GuideViewController.swift */,
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
 				0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */,
+				0FF4E0BA1E68006100469F28 /* InquiryViewController.swift */,
+				0FF4E0BC1E6809D900469F28 /* AboutViewController.swift */,
 				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
 				0F02E8081E2CA9D400674D76 /* TestViewController.swift */,
 				0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */,
@@ -477,14 +495,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */,
+				0FF4E0B31E67E65100469F28 /* OtherViewController.swift in Sources */,
 				0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */,
+				0FF4E0B51E67E9FD00469F28 /* SettingViewController.swift in Sources */,
 				0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */,
 				0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */,
+				0FF4E0BB1E68006100469F28 /* InquiryViewController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
+				0FF4E0BD1E6809D900469F28 /* AboutViewController.swift in Sources */,
+				0FF4E0B91E67FED400469F28 /* GuideViewController.swift in Sources */,
 				0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */,
 				0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */,
 				0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */,
+				0FF4E0B71E67FA7800469F28 /* FAQViewController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
 				0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */,
 			);
