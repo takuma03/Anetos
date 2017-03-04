@@ -53,7 +53,7 @@ class ChoiceTopsViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         // TBD
         // 撮影した画像をカメラロールに保存
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         
         // 画像をアップロード機能
         print("アップロードを開始しました。")
