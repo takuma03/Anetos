@@ -669,14 +669,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlh-mx-llL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="termsWebView" destination="mlh-mx-llL" id="Cbz-wO-Gal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxh-QZ-8SO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ytb-6z-01U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1296"/>
+            <point key="canvasLocation" x="2304.8000000000002" y="1295.8020989505249"/>
         </scene>
         <!--Top View Controller-->
         <scene sceneID="X7T-Z0-HAA">
