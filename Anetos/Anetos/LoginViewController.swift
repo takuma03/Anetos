@@ -60,7 +60,7 @@ class LoginViewController: UIViewController {
                 print("ログインエラー")
             } else {
                 
-                var request = URLRequest(url: URL(string: "http://52.196.123.118:3000/api/v1/clothes/takuma")!)
+                var request = URLRequest(url: URL(string: "http://52.196.123.118:3000/api/v1/clothes/" + self.appDelegate.user_name)!)
                 //HTTPメソッドを設定する
                 request.httpMethod = "GET"
                 
