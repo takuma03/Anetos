@@ -28,7 +28,7 @@ class EditCellViewController: UIViewController {
         print("POSTするデータを表示する")
         print(postString)
         //URLを設定する
-        var request = URLRequest(url: URL(string: "http://54.92.44.56:3000/api/v1/delete/")!)
+        var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/delete/")!)
         //HTTPメソッドを設定する
         request.httpMethod = "POST"
         //HTTPBodyにデータを設定する
@@ -72,7 +72,7 @@ class EditCellViewController: UIViewController {
     //通信が完了した後に実行する関数
     func completionHandler1(){
         print("削除通信が完了しました。")
-        var request = URLRequest(url: URL(string: "http://54.92.44.56:3000/api/v1/clothes/" + self.appDelegate.user_name)!)
+        var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/clothes/" + self.appDelegate.user_name)!)
         //HTTPメソッドを設定する
         request.httpMethod = "GET"
         
@@ -129,7 +129,7 @@ class EditCellViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        selectCloth.sd_setImage(with: URL(string: "http://54.92.44.56:3000/clothes/get_image?id=" + selectedID))
+        selectCloth.sd_setImage(with: URL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + selectedID))
     }
     
     override func didReceiveMemoryWarning() {

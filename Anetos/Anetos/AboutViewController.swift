@@ -14,7 +14,7 @@ class AboutViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var termsWebView: UIWebView!
     
-    var targetURL = NSURL(string:"http://54.92.44.56:3000/terms")
+    var targetURL = NSURL(string:"http://52.193.213.154:3000/terms")
     
     
     override func viewDidLoad() {

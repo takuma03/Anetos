@@ -28,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //ユーザーの洋服ID格納用配列初期設定
     var cloth_array: Array<String> = []
     
+    //性別初期設定
+    var sex: Int = 0
+    
+    //誕生日初期設定
+    var birthday: String = ""
+    
     
     //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -84,7 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("POSTするデータを表示")
             print(postString)
             //URLを設定する
-            var request = URLRequest(url: URL(string: "http://54.92.44.56:3000/api/v1/check/")!)
+            var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/check/")!)
             //HTTPメソッドを設定する
             request.httpMethod = "POST"
             //HTTPBodyにデータを設定する

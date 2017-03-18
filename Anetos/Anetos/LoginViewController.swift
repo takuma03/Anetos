@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
     
@@ -25,7 +26,7 @@ class LoginViewController: UIViewController {
         //グローバル変数にユーザ名を格納
         self.appDelegate.user_name =  username.text!
         //URLを設定する
-        var request = URLRequest(url: URL(string: "http://54.92.44.56:3000/api/v1/login/")!)
+        var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/login/")!)
         //HTTPメソッドを設定する
         request.httpMethod = "POST"
         //HTTPBodyにデータを設定する
@@ -83,7 +84,7 @@ class LoginViewController: UIViewController {
                 print("ログインエラー")
             } else {
                 
-                var request = URLRequest(url: URL(string: "http://54.92.44.56:3000/api/v1/clothes/" + self.appDelegate.user_name)!)
+                var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/clothes/" + self.appDelegate.user_name)!)
                 //HTTPメソッドを設定する
                 request.httpMethod = "GET"
                 
@@ -114,18 +115,61 @@ class LoginViewController: UIViewController {
                 //タスクを開始する
                 task.resume()
                 
-                let storyboard: UIStoryboard = self.storyboard!
-                let nextView = storyboard.instantiateViewController(withIdentifier: "Home")
-                self.present(nextView, animated: true, completion: nil)
             }
         }
     }
     
     //通信が完了した後に実行する関数
     func completionHandler2(){
-        print("test0")
-        print("test1")
-        print(self.appDelegate.cloth_array)
+        DispatchQueue.main.async {
+            
+                
+            var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/users/" + self.appDelegate.user_name)!)
+            //HTTPメソッドを設定する
+            request.httpMethod = "GET"
+            //タスクを作成する
+            let task = URLSession.shared.dataTask(with: request, completionHandler: {
+                    (data, response, error) in
+                    
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                    
+                print("response: \(response!)")
+                let data: String = String(data: data!, encoding: .utf8)!
+                print("data:\(data)")
+                let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                let json = JSON(data: dataToConvert!)
+                print(json["sex"])
+                print(json["birthday"])
+                self.appDelegate.sex = json["sex"].intValue
+                self.appDelegate.birthday = json["birthday"].stringValue
+                
+                
+                //文字列の加工
+                //data = data.replacingOccurrences(of: "{", with: "")
+//                data = data.replacingOccurrences(of: "{\"id\":", with: "")
+//                data = data.replacingOccurrences(of: "}", with: "")
+//                data = data.replacingOccurrences(of: "]", with: "")
+                //配列にレスポンスデータを格納
+//                print(data)
+//                let json = JSON(data: data!)
+//                self.appDelegate.cloth_array = data.components(separatedBy: ",")
+//                print(self.appDelegate.cloth_array)
+//                print(self.appDelegate.cloth_array.count)
+                
+                })
+                //タスクを開始する
+                task.resume()
+                
+                let storyboard: UIStoryboard = self.storyboard!
+                let nextView = storyboard.instantiateViewController(withIdentifier: "Home")
+                self.present(nextView, animated: true, completion: nil)
+            
+        }
+
+        
     }
     
     override func viewDidLoad() {

@@ -45,7 +45,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func setupClothes() {
         //配列で取得したcloth_id分処理を繰り返す
         for cloth_id in self.appDelegate.cloth_array{
-            let f = Cloth(imageUrl: NSURL(string: "http://54.92.44.56:3000/clothes/get_image?id=" + cloth_id))
+            let f = Cloth(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id))
             clothes.append(f)
         }
     }

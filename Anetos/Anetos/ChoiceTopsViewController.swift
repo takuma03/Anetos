@@ -58,7 +58,7 @@ class ChoiceTopsViewController: UIViewController, UIPickerViewDelegate, UIPicker
         // 画像をアップロード機能
         print("アップロードを開始しました。")
         // アップロード先を指定する
-        var request = URLRequest(url:URL(string:"http://54.92.44.56:3000/api/v1/clothes/")!)
+        var request = URLRequest(url:URL(string:"http://52.193.213.154:3000/api/v1/clothes/")!)
         
         request.httpMethod = "POST"
         // Content-Typeとして、multipart/form-dataを明示する、その中のboundary(境界線)の指定も必須

@@ -10,19 +10,36 @@ import UIKit
 
 class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    //AppDelegateのインスタンスを取得
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var selectedCell: [String]?
-    
     //データ
     var dataInSection = [["男性","女性"],["誕生日","都道府県"]]
     //セクション
     var sectionIndex:[String] = ["",""]
     //データを返す
     func tableView(_ tableView:UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for:indexPath as IndexPath) as UITableViewCell
-        var test = dataInSection[indexPath.section]
-        cell.textLabel?.text = test[indexPath.row]
-        //print(indexPath.row)
-        return cell
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for:indexPath as IndexPath) as UITableViewCell
+            var test = dataInSection[indexPath.section]
+            if self.appDelegate.sex == 1 {
+                if indexPath.row == 0 {
+                    cell.accessoryType = .checkmark
+                }
+            }else{
+                if indexPath.row == 1 {
+                    cell.accessoryType = .checkmark
+                }
+            }
+            cell.textLabel?.text = test[indexPath.row]
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for:indexPath as IndexPath) as UITableViewCell
+            print(type(of: indexPath.section))
+            var test = dataInSection[indexPath.section]
+            cell.textLabel?.text = test[indexPath.row]
+            return cell
+        }
     }
     
     //データの個数を返す
@@ -41,11 +58,9 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
     }
     
     // Cell が選択された場合
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.section)
         print(indexPath.row)
-        
         
         if indexPath.section == 0 {
             if indexPath.row == 0 {
@@ -57,8 +72,6 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
                 // チェックマークを入れる
                 let cell = tableView.cellForRow(at:indexPath)
                 cell?.accessoryType = .checkmark
-                
-                
             }else{
                 //チェックマークを外す
                 let nocell = IndexPath(item: 0, section: 0)
