@@ -9,33 +9,10 @@
 import UIKit
 import SwiftyJSON
 
-class LoginViewController: UIViewController,UITextFieldDelegate{
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        username.delegate = self
-        password.delegate = self
-    }
-    
-    func textFieldShouldReturn(_ username: UITextField) -> Bool {
-        // 今フォーカスが当たっているテキストボックスからフォーカスを外す
-        username.resignFirstResponder()
-        switch username.tag{
-        // Tag番号が1の場合は次のテキストボックスをフォーカスする
-        case 1:
-            let nextTag = username.tag + 1
-            if let nextTextField = self.view.viewWithTag(nextTag) {
-                nextTextField.becomeFirstResponder()
-            }
-        // Tag番号が1以外の場合はログインを実行する
-        default:
-            login(Any.self)
-        }
-        return true
-    }
     
     // ActivityIndicator を用意
     var ActivityIndicator: UIActivityIndicatorView!
@@ -198,6 +175,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         }
 
         
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
