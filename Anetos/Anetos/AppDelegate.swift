@@ -12,28 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    //ユーザ名初期設定
-    var user_name: String = ""
-    
-    //トークン初期設定
-    var token: String = ""
-    
-    //レスポンスデータ初期設定
-    var data: String = ""
-    
-    //タグ名初期設定
-    var tag_name: String = ""
-    
-    //ユーザーの洋服ID格納用配列初期設定
-    var cloth_array: Array<String> = []
-    
-    //性別初期設定
-    var sex: Int = 0
-    
-    //誕生日初期設定
-    var birthday: String = ""
-    
+    var user_name: String = ""          //ユーザ名初期設定
+    var token: String = ""              //トークン初期設定
+    var data: String = ""               //レスポンスデータ初期設定
+    var tag_name: String = ""           //タグ名初期設定
+    var cloth_array: Array<String> = [] //ユーザーの洋服ID格納用配列初期設定
+    var sex: Int = 0                    //性別初期設定
+    var birthday: String = ""           //誕生日初期設定
+    var region: String = ""             //地域初期設定
     
     //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

@@ -10,18 +10,22 @@ import UIKit
 
 class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    @IBAction func unwindToChangeUser(segue: UIStoryboardSegue){
+        
+    }
+    
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var selectedCell: [String]?
     //データ
     var dataInSection = [["男性","女性"],["誕生日","都道府県"]]
-    var test1 = ["test","test"]
     //セクション
     var sectionIndex:[String] = ["",""]
     //データを返す
     func tableView(_ tableView:UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for:indexPath as IndexPath) as UITableViewCell
+            cell.detailTextLabel?.text = ""
             var test = dataInSection[indexPath.section]
             if self.appDelegate.sex == 1 {
                 if indexPath.row == 0 {
@@ -36,10 +40,15 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for:indexPath as IndexPath) as UITableViewCell
-            
+            cell.detailTextLabel?.text = ""
             var test = dataInSection[indexPath.section]
             cell.textLabel?.text = test[indexPath.row]
-            cell.detailTextLabel?.text = test1[indexPath.row]
+            if indexPath.row == 0{
+                // 詳細テキストラベル
+                cell.detailTextLabel?.text = self.appDelegate.birthday
+            }else{
+                cell.detailTextLabel?.text = self.appDelegate.region
+            }
             
             cell.accessoryType = .disclosureIndicator
             return cell
@@ -85,6 +94,12 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
                 // チェックマークを入れる
                 let cell = tableView.cellForRow(at:indexPath)
                 cell?.accessoryType = .checkmark
+            }
+        }else{
+            if indexPath.row == 0 {
+                performSegue(withIdentifier: "toChoiceBirthdayViewController",sender: nil)
+            }else{
+                performSegue(withIdentifier: "toChoiceRegionsViewController",sender: nil)
             }
         }
     }
