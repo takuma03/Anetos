@@ -44,11 +44,11 @@ class LoginViewController: UIViewController {
             //取得したtokenに余分な文字列が含まれているため削除して変数に格納
             let token_data: String = String(data: data!, encoding: .utf8)!
             print("token_data")
-            print(token_data)
-            let token_array = token_data.components(separatedBy: "\"token\":")
-            let token = token_array[1].components(separatedBy: "\"")
-            print(token[1])
-            self.appDelegate.token = token[1]
+            let dataToConvert = token_data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+            let json = JSON(data: dataToConvert!)
+            print(json["message"])
+            print(json["token"])
+            self.appDelegate.token = json["token"].stringValue
             self.completionHandler1()
             
         })
@@ -80,8 +80,26 @@ class LoginViewController: UIViewController {
         // バックグラウンドだとUIの処理が出来ないので、メインスレッドでUIの処理を行わせる.
         DispatchQueue.main.async {
             print("data: \(self.appDelegate.token)")
-            if (self.appDelegate.token.contains("error")) {
-                print("ログインエラー")
+            if (self.appDelegate.token.isEmpty) {
+                //ログインエラー処理
+                // ① UIAlertControllerクラスのインスタンスを生成
+                // タイトル, メッセージ, Alertのスタイルを指定する
+                // 第3引数のpreferredStyleでアラートの表示スタイルを指定する
+                let alert: UIAlertController = UIAlertController(title: "ログインエラー", message: "ユーザー名またはパスワードが誤っております。", preferredStyle:  UIAlertControllerStyle.alert)
+                // ② Actionの設定
+                // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+                // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+                // OKボタン
+                let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                    // ボタンが押された時の処理を書く（クロージャ実装）
+                    (action: UIAlertAction!) -> Void in
+                    print("OK")
+                })
+                // ③ UIAlertControllerにActionを追加
+                alert.addAction(defaultAction)
+                // ④ Alertを表示
+                self.present(alert, animated: true, completion: nil)
+                
             } else {
                 
                 var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/clothes/" + self.appDelegate.user_name)!)
@@ -145,19 +163,6 @@ class LoginViewController: UIViewController {
                 print(json["birthday"])
                 self.appDelegate.sex = json["sex"].intValue
                 self.appDelegate.birthday = json["birthday"].stringValue
-                
-                
-                //文字列の加工
-                //data = data.replacingOccurrences(of: "{", with: "")
-//                data = data.replacingOccurrences(of: "{\"id\":", with: "")
-//                data = data.replacingOccurrences(of: "}", with: "")
-//                data = data.replacingOccurrences(of: "]", with: "")
-                //配列にレスポンスデータを格納
-//                print(data)
-//                let json = JSON(data: data!)
-//                self.appDelegate.cloth_array = data.components(separatedBy: ",")
-//                print(self.appDelegate.cloth_array)
-//                print(self.appDelegate.cloth_array.count)
                 
                 })
                 //タスクを開始する

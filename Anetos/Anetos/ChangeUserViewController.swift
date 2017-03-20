@@ -15,6 +15,7 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
     var selectedCell: [String]?
     //データ
     var dataInSection = [["男性","女性"],["誕生日","都道府県"]]
+    var test1 = ["test","test"]
     //セクション
     var sectionIndex:[String] = ["",""]
     //データを返す
@@ -35,9 +36,12 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for:indexPath as IndexPath) as UITableViewCell
-            print(type(of: indexPath.section))
+            
             var test = dataInSection[indexPath.section]
             cell.textLabel?.text = test[indexPath.row]
+            cell.detailTextLabel?.text = test1[indexPath.row]
+            
+            cell.accessoryType = .disclosureIndicator
             return cell
         }
     }
