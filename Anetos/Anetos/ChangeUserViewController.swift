@@ -14,6 +14,8 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
         
     }
     
+    @IBOutlet weak var userTable: UITableView!
+    
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var selectedCell: [String]?
@@ -51,7 +53,9 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
             }
             
             cell.accessoryType = .disclosureIndicator
+            
             return cell
+            //リロードを追加
         }
     }
     
@@ -107,6 +111,12 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        userTable.reloadData()
+        
     }
     
     override func didReceiveMemoryWarning() {

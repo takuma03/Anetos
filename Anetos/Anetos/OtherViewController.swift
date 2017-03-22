@@ -57,7 +57,6 @@ class OtherViewController: UIViewController,UITableViewDelegate, UITableViewData
         }else if indexPath.row == 2{
             performSegue(withIdentifier: "toGuideViewController",sender: nil)
         }else if indexPath.row == 3{
-//            performSegue(withIdentifier: "toInquiryViewController",sender: nil)
             if let url = URL(string: "https://twitter.com/anetos_support"), UIApplication.shared.canOpenURL(url){
                 UIApplication.shared.open(url, options: [:])
             }

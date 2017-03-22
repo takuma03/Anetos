@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anetos/LoginViewController.swift"
-            timestampString = "511682797.01292"
+            timestampString = "511873145.143571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "completionHandler2()"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "completionHandler1()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anetos/LoginViewController.swift"
-            timestampString = "511682797.01292"
+            timestampString = "511873005.733501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "completionHandler1()"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

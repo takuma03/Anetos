@@ -11,6 +11,8 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController,UITextFieldDelegate {
     
+    var region_id: String = ""
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -99,8 +101,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     //通信が完了した後に実行する関数
     func completionHandler1(){
-        // クルクルストップ
-        ActivityIndicator.stopAnimating()
+        
         // バックグラウンドだとUIの処理が出来ないので、メインスレッドでUIの処理を行わせる.
         DispatchQueue.main.async {
             print("data: \(self.appDelegate.token)")
@@ -186,21 +187,59 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 print(json["sex"])
                 print(json["birthday"])
                 self.appDelegate.sex = json["sex"].intValue
-                self.appDelegate.birthday = json["birthday"].stringValue
-                
+                let birthday = json["birthday"].stringValue
+                self.appDelegate.birthday = birthday.replacingOccurrences(of: "-", with: "/")
+                self.region_id = json["region_id"].stringValue
+                self.completionHandler3()
                 })
                 //タスクを開始する
                 task.resume()
-                
-                let storyboard: UIStoryboard = self.storyboard!
-                let nextView = storyboard.instantiateViewController(withIdentifier: "Home")
-                self.present(nextView, animated: true, completion: nil)
+            
             
         }
 
         
     }
     
+    
+    func completionHandler3(){
+        DispatchQueue.main.async {
+            var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/region/" + self.region_id)!)
+            //HTTPメソッドを設定する
+            request.httpMethod = "GET"
+            //タスクを作成する
+            let task = URLSession.shared.dataTask(with: request, completionHandler: {
+                (data, response, error) in
+                
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                
+                print("response: \(response!)")
+                let data: String = String(data: data!, encoding: .utf8)!
+                print("data:\(data)")
+                let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                let json = JSON(data: dataToConvert!)
+                print(json["region_name"])
+                self.appDelegate.region = json["region_name"].stringValue
+                self.completionHandler4()
+            })
+            //タスクを開始する
+            task.resume()
+        
+        }
+    }
+    
+    func completionHandler4(){
+        // クルクルストップ
+        ActivityIndicator.stopAnimating()
+        DispatchQueue.main.async {
+            let storyboard: UIStoryboard = self.storyboard!
+            let nextView = storyboard.instantiateViewController(withIdentifier: "Home")
+            self.present(nextView, animated: true, completion: nil)
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
