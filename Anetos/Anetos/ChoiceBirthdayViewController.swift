@@ -9,9 +9,28 @@
 import UIKit
 
 class ChoiceBirthdayViewController: UIViewController {
+
     
+    //AppDelegateのインスタンスを取得
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var changedBirthday: String = ""
+    
+    @IBAction func changeBirthday(_ sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        
+        changedBirthday = formatter.string(from: sender.date)
+    }
+    @IBAction func setBirthday(_ sender: UIButton) {
+        self.appDelegate.birthday = changedBirthday
+        print(self.appDelegate.birthday)
+        self.dismiss(animated: true, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     

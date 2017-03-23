@@ -582,6 +582,16 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="v2p-Sy-OYg">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yHK-0o-OZs">
+                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="保存"/>
+                                                <connections>
+                                                    <action selector="updateUser:" destination="vQr-vz-dKb" eventType="touchUpInside" id="rS8-C2-jlL"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -638,7 +648,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0zK-1v-OzR" id="9TL-yi-sYy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -657,10 +667,10 @@
             </objects>
             <point key="canvasLocation" x="4312.8000000000002" y="4109.5952023988011"/>
         </scene>
-        <!--View Controller-->
+        <!--Choice Birthday View Controller-->
         <scene sceneID="r4w-U1-Lic">
             <objects>
-                <viewController id="QAw-zM-7Ai" sceneMemberID="viewController">
+                <viewController id="QAw-zM-7Ai" customClass="ChoiceBirthdayViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0hm-x3-Eo1"/>
                         <viewControllerLayoutGuide type="bottom" id="0PF-OO-B15"/>
@@ -684,9 +694,36 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="NPh-2r-1Zh">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JZM-nM-EFv">
+                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="完了"/>
+                                                <connections>
+                                                    <action selector="setBirthday:" destination="QAw-zM-7Ai" eventType="touchUpInside" id="djR-6Y-1O2"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uMn-JL-O6w">
+                                <rect key="frame" x="0.0" y="192" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="511964848.76813602">
+                                    <!--2017-03-23 12:27:28 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-2556190800">
+                                    <!--1920-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="536410800">
+                                    <!--2017-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
+                                <connections>
+                                    <action selector="changeBirthday:" destination="QAw-zM-7Ai" eventType="valueChanged" id="Jmb-Ix-wJi"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

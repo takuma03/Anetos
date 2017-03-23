@@ -13,6 +13,8 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
     @IBAction func unwindToChangeUser(segue: UIStoryboardSegue){
         
     }
+    // ActivityIndicator を用意
+    var ActivityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var userTable: UITableView!
     
@@ -89,6 +91,9 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
                 // チェックマークを入れる
                 let cell = tableView.cellForRow(at:indexPath)
                 cell?.accessoryType = .checkmark
+                //男性の場合は1を入れる
+                self.appDelegate.sex = 1
+                
             }else{
                 //チェックマークを外す
                 let nocell = IndexPath(item: 0, section: 0)
@@ -98,6 +103,8 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
                 // チェックマークを入れる
                 let cell = tableView.cellForRow(at:indexPath)
                 cell?.accessoryType = .checkmark
+                //女性の場合は0を入れる
+                self.appDelegate.sex = 0
             }
         }else{
             if indexPath.row == 0 {
@@ -118,6 +125,80 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
         userTable.reloadData()
         
     }
+    
+    @IBAction func updateUser(_ sender: UIButton) {
+        //POSTするデータを設定する
+        let postString = "user_name=\(self.appDelegate.user_name)&sex=\(self.appDelegate.sex)&birthday=\(self.appDelegate.birthday)&region_name=\(self.appDelegate.region)"
+        
+        //URLを設定する
+        var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/user_update/")!)
+        //HTTPメソッドを設定する
+        request.httpMethod = "POST"
+        //HTTPBodyにデータを設定する
+        request.httpBody = postString.data(using: .utf8)
+        //タスクを作成する
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            (data, response, error) in
+            
+            if error != nil {
+                print(error!)
+                return
+            }
+            
+            print("response: \(response!)")
+            //取得したtokenに余分な文字列が含まれているため削除して変数に格納
+            let data: String = String(data: data!, encoding: .utf8)!
+            print(data)
+            self.completionHandler1()
+            
+        })
+        // ActivityIndicatorを作成＆中央に配置
+        ActivityIndicator = UIActivityIndicatorView()
+        ActivityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        ActivityIndicator.center = self.view.center
+        
+        // クルクルをストップした時に非表示する
+        ActivityIndicator.hidesWhenStopped = true
+        
+        // 色を設定
+        ActivityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        
+        //Viewに追加
+        self.view.addSubview(ActivityIndicator)
+        // クルクルスタート
+        ActivityIndicator.startAnimating()
+        
+        //タスクを開始する
+        task.resume()
+        
+        
+    }
+    
+    func completionHandler1(){
+        // クルクルストップ
+        ActivityIndicator.stopAnimating()
+        // バックグラウンドだとUIの処理が出来ないので、メインスレッドでUIの処理を行わせる.
+        DispatchQueue.main.async {
+            // ① UIAlertControllerクラスのインスタンスを生成
+            // タイトル, メッセージ, Alertのスタイルを指定する
+            // 第3引数のpreferredStyleでアラートの表示スタイルを指定する
+            let alert: UIAlertController = UIAlertController(title: "保存完了", message: "更新しました。", preferredStyle:  UIAlertControllerStyle.alert)
+            // ② Actionの設定
+            // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+            // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+            // OKボタン
+            let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("OK")
+            })
+            // ③ UIAlertControllerにActionを追加
+            alert.addAction(defaultAction)
+            // ④ Alertを表示
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
