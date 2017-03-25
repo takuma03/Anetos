@@ -10,7 +10,7 @@ import UIKit
 
 class ChoiceOthersViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate ,URLSessionTaskDelegate{
     
-    @IBAction func gonext(_ sender: Any) {
+    @IBAction func goNext(_ sender: Any) {
         print(self.appDelegate.tag_name)
         let picker = UIImagePickerController()
         picker.sourceType = .camera

@@ -13,7 +13,7 @@ class ChoiceBotomsViewController: UIViewController, UIPickerViewDelegate, UIPick
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    @IBAction func gonext(_ sender: Any) {
+    @IBAction func goNext(_ sender: Any) {
         print(self.appDelegate.tag_name)
         let picker = UIImagePickerController()
         picker.sourceType = .camera
