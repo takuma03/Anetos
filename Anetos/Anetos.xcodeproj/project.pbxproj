@@ -35,6 +35,8 @@
 		0FFBBC531E73C9DE008A43F7 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFBBC521E73C9DE008A43F7 /* ChangePasswordViewController.swift */; };
 		0FFBBC551E73CBA0008A43F7 /* ChangeMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFBBC541E73CBA0008A43F7 /* ChangeMailViewController.swift */; };
 		7E985F61950256A03949FDD9 /* Pods_AnetosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */; };
+		A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D807031E8673150021F55A /* ChoiceBotomsController.swift */; };
+		A1D807061E8673580021F55A /* ChoiceOthersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D807051E8673580021F55A /* ChoiceOthersController.swift */; };
 		A66C204013758CD2E9A6B58F /* Pods_AnetosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */; };
 		B71AA357AF55CB015F38C6F8 /* Pods_Anetos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +100,8 @@
 		80D15F63B7A9E777E4B7FC94 /* Pods-AnetosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9572831A63523F6BAEE5F371 /* Pods-Anetos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anetos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anetos/Pods-Anetos.release.xcconfig"; sourceTree = "<group>"; };
 		9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anetos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D807031E8673150021F55A /* ChoiceBotomsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBotomsController.swift; sourceTree = "<group>"; };
+		A1D807051E8673580021F55A /* ChoiceOthersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceOthersController.swift; sourceTree = "<group>"; };
 		DA2CF39847B1A9C0BD38EE34 /* Pods-AnetosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC6527C23B816560BC1E0C3D /* Pods-AnetosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +186,8 @@
 				0FCC741B1E2BBE4D00935D3A /* Assets.xcassets */,
 				0FCC741D1E2BBE4D00935D3A /* LaunchScreen.storyboard */,
 				0FCC74201E2BBE4D00935D3A /* Info.plist */,
+				A1D807031E8673150021F55A /* ChoiceBotomsController.swift */,
+				A1D807051E8673580021F55A /* ChoiceOthersController.swift */,
 			);
 			path = Anetos;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 				0FFBBC531E73C9DE008A43F7 /* ChangePasswordViewController.swift in Sources */,
 				0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */,
 				0FF4E0BB1E68006100469F28 /* InquiryViewController.swift in Sources */,
+				A1D807061E8673580021F55A /* ChoiceOthersController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
 				0FF4E0BD1E6809D900469F28 /* AboutViewController.swift in Sources */,
@@ -529,6 +536,7 @@
 				0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */,
 				0FF4E0B71E67FA7800469F28 /* FAQViewController.swift in Sources */,
 				0FFBBC511E73C6B7008A43F7 /* ChangeUserViewController.swift in Sources */,
+				A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
 				0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */,
 			);
