@@ -40,9 +40,9 @@ class ChangePasswordViewController: UIViewController,UITableViewDelegate, UITabl
     
     // Cell が選択された場合
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PasswordCell", for:indexPath as IndexPath) as! ChangePasswordTableViewCell
-        cell.becomeFirstResponder()
-        
+        if let cell = tableView.cellForRow(at: indexPath) as? ChangePasswordTableViewCell {
+            cell.passwordTextField.becomeFirstResponder()
+        }
     }
     
     
