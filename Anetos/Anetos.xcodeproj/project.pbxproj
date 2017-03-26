@@ -11,6 +11,7 @@
 		0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E8081E2CA9D400674D76 /* TestViewController.swift */; };
 		0F0D365C1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */; };
 		0F0D365E1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */; };
+		0F238B0D1E87ABBC00E6A305 /* ChangePasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F238B0C1E87ABBC00E6A305 /* ChangePasswordTableViewCell.swift */; };
 		0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */; };
 		0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */; };
 		0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */; };
@@ -64,6 +65,7 @@
 		0F02E8081E2CA9D400674D76 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceRegionsViewController.swift; sourceTree = "<group>"; };
 		0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBirthdayViewController.swift; sourceTree = "<group>"; };
+		0F238B0C1E87ABBC00E6A305 /* ChangePasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewCell.swift; sourceTree = "<group>"; };
 		0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTopsViewController.swift; sourceTree = "<group>"; };
 		0FCC740F1E2BBE4D00935D3A /* Anetos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anetos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */,
 				0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */,
 				0FFBBC521E73C9DE008A43F7 /* ChangePasswordViewController.swift */,
+				0F238B0C1E87ABBC00E6A305 /* ChangePasswordTableViewCell.swift */,
 				0FF4E0B21E67E65100469F28 /* OtherViewController.swift */,
 				0FFBBC501E73C6B7008A43F7 /* ChangeUserViewController.swift */,
 				0FF4E0B81E67FED400469F28 /* GuideViewController.swift */,
@@ -539,6 +542,7 @@
 				A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
 				0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */,
+				0F238B0D1E87ABBC00E6A305 /* ChangePasswordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

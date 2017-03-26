@@ -45,7 +45,6 @@ class OtherViewController: UIViewController,UITableViewDelegate, UITableViewData
     }
     
     // Cell が選択された場合
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print(indexPath.row)
