@@ -8,48 +8,50 @@
 
 import UIKit
 
-class ChangePasswordViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class ChangePasswordViewController: UIViewController,UITableViewDataSource, PasswordDelegate {
+    
+    @IBOutlet weak var passwordTableView: UITableView!
     
     //データ
-    var dataInSection = [["現在のパスワード"],["新しいパスワード","パスワードを確認"]]
-    //セクション
-    var sectionIndex:[String] = ["",""]
+    var dataList = ["現在のパスワード","新しいパスワード","新しいパスワード(確認)"]
     
-    //データを返す
+    //データを返すメソッド
     func tableView(_ tableView:UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PasswordCell", for:indexPath as IndexPath) as! ChangePasswordTableViewCell
-        var section = dataInSection[indexPath.section]
-        cell.textLabel?.text = section[indexPath.row]
+        
+        //セルを取得して値を設定する。
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TestCell", for:indexPath as IndexPath) as! ChangePasswordTableViewCell
+        cell.passwordTextField.placeholder = dataList[indexPath.row]
+        //自作セルのデリゲート先に自分を設定する。
+        cell.delegate = self
+        
         return cell
     }
     
-    //データの個数を返す
+    //データの個数を返すメソッド
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
-        return dataInSection[section].count
-    }
-    
-    //セクション名を返す
-    func tableView(_ tableView:UITableView, titleForHeaderInSection section:Int) -> String?{
-        return sectionIndex[section]
-    }
-    
-    //セクションの個数を返す
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionIndex.count
-    }
-    
-    // Cell が選択された場合
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) as? ChangePasswordTableViewCell {
-            cell.passwordTextField.becomeFirstResponder()
-        }
+        return dataList.count
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //自作セルをテーブルビューに登録する。
+        let testXib = UINib(nibName:"ChangePasswordTableViewCell", bundle:nil)
+        passwordTableView.register(testXib, forCellReuseIdentifier:"TestCell")
+        
     }
+    
+    //デリゲートメソッド
+    func textFieldDidEndEditing(cell: ChangePasswordTableViewCell, value:String) {
+        //変更されたセルのインデックスを取得する。
+        let index = passwordTableView.indexPathForRow(at: cell.convert(cell.bounds.origin, to:passwordTableView))
+        
+        //データを変更する。
+        dataList[index!.row] = value
+        print(dataList)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,3 +60,4 @@ class ChangePasswordViewController: UIViewController,UITableViewDelegate, UITabl
     
     
 }
+
