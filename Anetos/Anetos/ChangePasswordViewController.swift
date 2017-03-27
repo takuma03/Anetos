@@ -13,25 +13,46 @@ class ChangePasswordViewController: UIViewController,UITableViewDataSource, Pass
     @IBOutlet weak var passwordTableView: UITableView!
     
     //データ
-    var dataList = ["現在のパスワード","新しいパスワード","新しいパスワード(確認)"]
+    var dataList = [["現在のパスワード"],["新しいパスワード","新しいパスワード(確認用)"]]
+    //セクション
+    var sectionIndex:[String] = ["",""]
     
     //データを返すメソッド
     func tableView(_ tableView:UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            //セルを取得して値を設定する。
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TestCell", for:indexPath as IndexPath) as! ChangePasswordTableViewCell
+            var password = dataList[indexPath.section]
+            cell.passwordTextField.placeholder = password[indexPath.row]
+            //自作セルのデリゲート先に自分を設定する。
+            cell.delegate = self
+            return cell
+        }else{
+            //セルを取得して値を設定する。
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TestCell", for:indexPath as IndexPath) as! ChangePasswordTableViewCell
+            var password = dataList[indexPath.section]
+            cell.passwordTextField.placeholder = password[indexPath.row]
+            //自作セルのデリゲート先に自分を設定する。
+            cell.delegate = self
+            return cell
+        }
         
-        //セルを取得して値を設定する。
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TestCell", for:indexPath as IndexPath) as! ChangePasswordTableViewCell
-        cell.passwordTextField.placeholder = dataList[indexPath.row]
-        //自作セルのデリゲート先に自分を設定する。
-        cell.delegate = self
-        
-        return cell
     }
     
     //データの個数を返すメソッド
     func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
-        return dataList.count
+        return dataList[section].count
     }
     
+    //セクション名を返す
+    func tableView(_ tableView:UITableView, titleForHeaderInSection section:Int) -> String?{
+        return sectionIndex[section]
+    }
+    
+    //セクションの個数を返す
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sectionIndex.count
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +69,7 @@ class ChangePasswordViewController: UIViewController,UITableViewDataSource, Pass
         let index = passwordTableView.indexPathForRow(at: cell.convert(cell.bounds.origin, to:passwordTableView))
         
         //データを変更する。
-        dataList[index!.row] = value
+        dataList[index!.section] = [value]
         print(dataList)
     }
     
