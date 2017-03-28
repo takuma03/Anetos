@@ -14,7 +14,9 @@ class ChangePasswordViewController: UIViewController,UITableViewDataSource, Pass
     
     //データ
     var dataList = [["現在のパスワード"],["新しいパスワード","新しいパスワード(確認用)"]]
+    
     //セクション
+    var dataList2 = [["","",""]]
     var sectionIndex:[String] = ["",""]
     
     //データを返すメソッド
@@ -69,10 +71,28 @@ class ChangePasswordViewController: UIViewController,UITableViewDataSource, Pass
         let index = passwordTableView.indexPathForRow(at: cell.convert(cell.bounds.origin, to:passwordTableView))
         
         //データを変更する。
-        dataList[index!.section] = [value]
+        let sec = index!.section
+        let row = index!.row
+        
+        dataList[sec][row] = value
+        print(value)
         print(dataList)
     }
     
+    @IBAction func changePassword(_ sender: Any) {
+        
+        
+        if dataList[0][0].contains("現在のパスワード"){
+            print("現在のパスワードが入力されていません。")
+        }else if dataList[1][0].contains("新しいパスワード"){
+            print("新しいパスワードが入力されていません。")
+        }else if dataList[1][1].contains("新しいパスワード(確認用)"){
+            print("新しいパスワード(確認用)が入力されていません。")
+        }else if dataList[1][0] != dataList[1][1]{
+            print("新しいパスワードが一致していません。")
+        }
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
