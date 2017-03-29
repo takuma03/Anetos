@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anetos/ChangePasswordViewController.swift"
-            timestampString = "512401490.844574"
+            timestampString = "512486557.673045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "textFieldDidEndEditing(cell:value:)"
             landmarkType = "7">
          </BreakpointContent>

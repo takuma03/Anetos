@@ -349,7 +349,7 @@
         <!--Setting View Controller-->
         <scene sceneID="al4-Gt-v0V">
             <objects>
-                <viewController id="OsT-nG-NjL" customClass="SettingViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Setting" id="OsT-nG-NjL" customClass="SettingViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wTW-IG-2uR"/>
                         <viewControllerLayoutGuide type="bottom" id="tNm-G7-n5e"/>
