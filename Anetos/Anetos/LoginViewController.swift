@@ -105,6 +105,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // バックグラウンドだとUIの処理が出来ないので、メインスレッドでUIの処理を行わせる.
         DispatchQueue.main.async {
             print("data: \(self.appDelegate.token)")
+            // クルクルストップ
+            self.ActivityIndicator.stopAnimating()
             if (self.appDelegate.token.isEmpty) {
                 //ログインエラー処理
                 // ① UIAlertControllerクラスのインスタンスを生成
@@ -232,9 +234,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     func completionHandler4(){
-        // クルクルストップ
-        ActivityIndicator.stopAnimating()
+        
         DispatchQueue.main.async {
+            // クルクルストップ
+            self.ActivityIndicator.stopAnimating()
             let storyboard: UIStoryboard = self.storyboard!
             let nextView = storyboard.instantiateViewController(withIdentifier: "Home")
             self.present(nextView, animated: true, completion: nil)

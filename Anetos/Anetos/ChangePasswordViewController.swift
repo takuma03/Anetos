@@ -217,10 +217,10 @@ class ChangePasswordViewController: UIViewController,UITableViewDataSource, Pass
     }
     
     func completionHandler1(){
-        // クルクルストップ
-        ActivityIndicator.stopAnimating()
+        
         DispatchQueue.main.async {
-            
+            // クルクルストップ
+            self.ActivityIndicator.stopAnimating()
             print(self.response_data)
             if self.response_data.contains("エラー") {
                 // ① UIAlertControllerクラスのインスタンスを生成

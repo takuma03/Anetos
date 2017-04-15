@@ -175,10 +175,11 @@ class ChangeUserViewController: UIViewController,UITableViewDelegate, UITableVie
     }
     
     func completionHandler1(){
-        // クルクルストップ
-        ActivityIndicator.stopAnimating()
+        
         // バックグラウンドだとUIの処理が出来ないので、メインスレッドでUIの処理を行わせる.
         DispatchQueue.main.async {
+            // クルクルストップ
+            self.ActivityIndicator.stopAnimating()
             // ① UIAlertControllerクラスのインスタンスを生成
             // タイトル, メッセージ, Alertのスタイルを指定する
             // 第3引数のpreferredStyleでアラートの表示スタイルを指定する

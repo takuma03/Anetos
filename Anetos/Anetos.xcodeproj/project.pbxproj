@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */; };
 		0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E8081E2CA9D400674D76 /* TestViewController.swift */; };
+		0F0CC2761E9A30880070A016 /* RegisterBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */; };
 		0F0D365C1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */; };
 		0F0D365E1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */; };
+		0F0F38B81E98B9DE003AD46E /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */; };
+		0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */; };
 		0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */; };
 		0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */; };
 		0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */; };
+		0F776B591E9D0817009DA482 /* RegisterRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */; };
 		0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */; };
 		0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */; };
 		0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74161E2BBE4D00935D3A /* SecondViewController.swift */; };
@@ -64,11 +68,15 @@
 		0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnetosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCellViewController.swift; sourceTree = "<group>"; };
 		0F02E8081E2CA9D400674D76 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterBirthdayViewController.swift; sourceTree = "<group>"; };
 		0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceRegionsViewController.swift; sourceTree = "<group>"; };
 		0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBirthdayViewController.swift; sourceTree = "<group>"; };
+		0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
+		0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
 		0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewCell.swift; sourceTree = "<group>"; };
 		0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordTableViewCell.xib; sourceTree = "<group>"; };
 		0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTopsViewController.swift; sourceTree = "<group>"; };
+		0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRegionViewController.swift; sourceTree = "<group>"; };
 		0FCC740F1E2BBE4D00935D3A /* Anetos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anetos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +178,11 @@
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
+				0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */,
+				0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */,
+				0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */,
+				0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */,
+				0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */,
 				0FFBBC521E73C9DE008A43F7 /* ChangePasswordViewController.swift */,
 				0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */,
 				0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */,
@@ -186,7 +199,6 @@
 				0FF4E0BC1E6809D900469F28 /* AboutViewController.swift */,
 				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
 				0F02E8081E2CA9D400674D76 /* TestViewController.swift */,
-				0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */,
 				0FCC74421E2BC83400935D3A /* TopViewController.swift */,
 				0FCC74441E2BC9C100935D3A /* LoginViewController.swift */,
 				0FCC741B1E2BBE4D00935D3A /* Assets.xcassets */,
@@ -358,6 +370,7 @@
 			files = (
 				0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */,
 				0FCC741F1E2BBE4D00935D3A /* LaunchScreen.storyboard in Resources */,
+				0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */,
 				0FCC741C1E2BBE4D00935D3A /* Assets.xcassets in Resources */,
 				0FCC741A1E2BBE4D00935D3A /* Main.storyboard in Resources */,
 			);
@@ -533,6 +546,7 @@
 				0FFBBC531E73C9DE008A43F7 /* ChangePasswordViewController.swift in Sources */,
 				0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */,
 				0FF4E0BB1E68006100469F28 /* InquiryViewController.swift in Sources */,
+				0F0CC2761E9A30880070A016 /* RegisterBirthdayViewController.swift in Sources */,
 				A1D807061E8673580021F55A /* ChoiceOthersController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
@@ -542,10 +556,12 @@
 				0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */,
 				0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */,
 				0FF4E0B71E67FA7800469F28 /* FAQViewController.swift in Sources */,
+				0F776B591E9D0817009DA482 /* RegisterRegionViewController.swift in Sources */,
 				0FFBBC511E73C6B7008A43F7 /* ChangeUserViewController.swift in Sources */,
 				A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
 				0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */,
+				0F0F38B81E98B9DE003AD46E /* RegisterTableViewCell.swift in Sources */,
 				0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
