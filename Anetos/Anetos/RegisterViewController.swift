@@ -162,7 +162,7 @@ class RegisterViewController: UIViewController,UITableViewDataSource,UITableView
         
         
         //POSTするデータを設定する
-        let postString = "user_name=\(dataList[0][0]) &password=\(dataList[1][0])&region=\(self.appDelegate.region)&email=\(dataList[2][0])&sex=\(self.appDelegate.sex)&birthday=\(self.appDelegate.birthday)"
+        let postString = "user_name=\(dataList[0][0])&password=\(dataList[1][0])&region=\(self.appDelegate.region)&email=\(dataList[2][0])&sex=\(self.appDelegate.sex)&birthday=\(self.appDelegate.birthday)"
         
         //グローバル変数にユーザ名を格納
         //URLを設定する
@@ -205,6 +205,7 @@ class RegisterViewController: UIViewController,UITableViewDataSource,UITableView
         
         
         //タスクを開始する
+        
         task.resume()
     }
     
