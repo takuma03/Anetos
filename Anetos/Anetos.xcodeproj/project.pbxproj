@@ -16,6 +16,7 @@
 		0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */; };
 		0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */; };
 		0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */; };
+		0F6AD2261EA3506D00BB71A6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */; };
 		0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */; };
 		0F776B591E9D0817009DA482 /* RegisterRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */; };
 		0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
 		0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewCell.swift; sourceTree = "<group>"; };
 		0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordTableViewCell.xib; sourceTree = "<group>"; };
+		0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTopsViewController.swift; sourceTree = "<group>"; };
 		0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRegionViewController.swift; sourceTree = "<group>"; };
 		0FCC740F1E2BBE4D00935D3A /* Anetos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anetos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			children = (
 				0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */,
 				0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */,
+				0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */,
 				0FCC74161E2BBE4D00935D3A /* SecondViewController.swift */,
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
@@ -535,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6AD2261EA3506D00BB71A6 /* HomeCollectionViewCell.swift in Sources */,
 				0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */,
 				0FFBBC551E73CBA0008A43F7 /* ChangeMailViewController.swift in Sources */,
 				0F0D365E1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift in Sources */,
