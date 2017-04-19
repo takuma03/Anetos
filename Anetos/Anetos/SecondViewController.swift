@@ -44,9 +44,14 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func setupClothes() {
         //配列で取得したcloth_id分処理を繰り返す
-        for cloth_id in self.appDelegate.cloth_array{
-            let f = Cloth(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id))
-            clothes.append(f)
+        //配列が空の場合は処理させない
+        if self.appDelegate.cloth_array[0].isEmpty {
+            
+        }else {
+            for cloth_id in self.appDelegate.cloth_array{
+                let f = Cloth(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id))
+                clothes.append(f)
+            }
         }
     }
     
@@ -63,6 +68,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
         let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath) as! CustomTableViewCell
         cell.setCell(cloth: clothes[indexPath.row])
+        print(indexPath.row)
+        print(cell)
         return cell
     }
     
