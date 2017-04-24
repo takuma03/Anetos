@@ -192,7 +192,7 @@
         <!--登録-->
         <scene sceneID="tcw-FO-ydB">
             <objects>
-                <viewController id="YXh-ml-LoC" customClass="RegisterViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YXh-ml-LoC" customClass="RegisterClothViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V3y-3s-wwZ"/>
                         <viewControllerLayoutGuide type="bottom" id="B9b-2e-G5l"/>
@@ -258,7 +258,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="←"/>
                                 <connections>
-                                    <segue destination="hCq-it-gfO" kind="unwind" unwindAction="unwindToRegisterWithSegue:" id="vbJ-Cb-oy9"/>
+                                    <segue destination="hCq-it-gfO" kind="unwind" unwindAction="unwindToRegisterClothWithSegue:" id="xe5-No-Gru"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSZ-wk-QYB">
@@ -922,7 +922,7 @@
                                 <rect key="frame" x="156" y="318" width="62" height="30"/>
                                 <state key="normal" title="新規登録"/>
                                 <connections>
-                                    <segue destination="eKH-Ia-mVC" kind="presentation" id="Bpv-wY-frI"/>
+                                    <segue destination="eKH-Ia-mVC" kind="presentation" id="7Lx-IJ-VO2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1317,7 +1317,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="←"/>
                                 <connections>
-                                    <segue destination="Qyx-dj-OdC" kind="unwind" unwindAction="unwindToRegisterWithSegue:" id="wPf-yL-jF9"/>
+                                    <segue destination="Qyx-dj-OdC" kind="unwind" unwindAction="unwindToRegisterClothWithSegue:" id="Phq-aj-6Fs"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMK-sG-LMf">
@@ -1372,7 +1372,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="←"/>
                                 <connections>
-                                    <segue destination="RXt-oa-ECZ" kind="unwind" unwindAction="unwindToRegisterWithSegue:" id="tb5-jy-U53"/>
+                                    <segue destination="RXt-oa-ECZ" kind="unwind" unwindAction="unwindToRegisterClothWithSegue:" id="z5a-9U-8Gm"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-MG-5ps">

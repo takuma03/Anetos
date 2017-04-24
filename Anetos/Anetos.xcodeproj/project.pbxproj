@@ -30,6 +30,7 @@
 		0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74421E2BC83400935D3A /* TopViewController.swift */; };
 		0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74441E2BC9C100935D3A /* LoginViewController.swift */; };
 		0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */; };
+		0FD62C861EAE295A0091F630 /* RegisterClothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD62C851EAE295A0091F630 /* RegisterClothViewController.swift */; };
 		0FDF4D251E5DB63200A23742 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */; };
 		0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF4D261E5DB7B500A23742 /* Model.swift */; };
 		0FF4E0B31E67E65100469F28 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4E0B21E67E65100469F28 /* OtherViewController.swift */; };
@@ -97,6 +98,7 @@
 		0FCC74441E2BC9C100935D3A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0FCC74461E2BCA0B00935D3A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0FCD1D351E61642B00311FD7 /* Anetos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anetos-Bridging-Header.h"; sourceTree = "<group>"; };
+		0FD62C851EAE295A0091F630 /* RegisterClothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterClothViewController.swift; sourceTree = "<group>"; };
 		0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		0FDF4D261E5DB7B500A23742 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0FF4E0B21E67E65100469F28 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
+				0FD62C851EAE295A0091F630 /* RegisterClothViewController.swift */,
 				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
 				A1D807031E8673150021F55A /* ChoiceBotomsController.swift */,
 				A1D807051E8673580021F55A /* ChoiceOthersController.swift */,
@@ -548,6 +551,7 @@
 				0FF4E0B51E67E9FD00469F28 /* SettingViewController.swift in Sources */,
 				0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */,
 				0FFBBC531E73C9DE008A43F7 /* ChangePasswordViewController.swift in Sources */,
+				0FD62C861EAE295A0091F630 /* RegisterClothViewController.swift in Sources */,
 				0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */,
 				0FF4E0BB1E68006100469F28 /* InquiryViewController.swift in Sources */,
 				0F0CC2761E9A30880070A016 /* RegisterBirthdayViewController.swift in Sources */,
