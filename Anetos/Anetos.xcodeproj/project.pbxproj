@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0F02E7301E62A8EC00F6C309 /* EditCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */; };
 		0F02E8091E2CA9D400674D76 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02E8081E2CA9D400674D76 /* TestViewController.swift */; };
+		0F0C5A561EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C5A541EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.swift */; };
+		0F0C5A571EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C5A551EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.xib */; };
 		0F0CC2761E9A30880070A016 /* RegisterBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */; };
 		0F0D365C1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */; };
 		0F0D365E1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */; };
@@ -70,6 +72,8 @@
 		0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnetosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F02E72F1E62A8EC00F6C309 /* EditCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCellViewController.swift; sourceTree = "<group>"; };
 		0F02E8081E2CA9D400674D76 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		0F0C5A541EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMailViewTableViewCell.swift; sourceTree = "<group>"; };
+		0F0C5A551EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeMailViewTableViewCell.xib; sourceTree = "<group>"; };
 		0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterBirthdayViewController.swift; sourceTree = "<group>"; };
 		0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceRegionsViewController.swift; sourceTree = "<group>"; };
 		0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBirthdayViewController.swift; sourceTree = "<group>"; };
@@ -195,8 +199,10 @@
 				0FFBBC521E73C9DE008A43F7 /* ChangePasswordViewController.swift */,
 				0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */,
 				0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */,
-				0FF4E0B61E67FA7800469F28 /* FAQViewController.swift */,
 				0FFBBC541E73CBA0008A43F7 /* ChangeMailViewController.swift */,
+				0F0C5A541EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.swift */,
+				0F0C5A551EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.xib */,
+				0FF4E0B61E67FA7800469F28 /* FAQViewController.swift */,
 				0FF4E0B41E67E9FD00469F28 /* SettingViewController.swift */,
 				0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */,
 				0F0D365B1E7FD3A100D0A3BE /* ChoiceRegionsViewController.swift */,
@@ -379,6 +385,7 @@
 				0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */,
 				0FCC741C1E2BBE4D00935D3A /* Assets.xcassets in Resources */,
 				0FCC741A1E2BBE4D00935D3A /* Main.storyboard in Resources */,
+				0F0C5A571EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +570,7 @@
 				0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */,
 				0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */,
 				0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */,
+				0F0C5A561EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.swift in Sources */,
 				0FF4E0B71E67FA7800469F28 /* FAQViewController.swift in Sources */,
 				0F776B591E9D0817009DA482 /* RegisterRegionViewController.swift in Sources */,
 				0FFBBC511E73C6B7008A43F7 /* ChangeUserViewController.swift in Sources */,
