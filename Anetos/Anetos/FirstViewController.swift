@@ -46,10 +46,25 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         return cell
     }
     
+     //ボトムスを表示させるメソッド
+    @IBOutlet weak var bottomsimage: UIImageView!
+    func setupBottoms(){
+        let imgUrl = NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=40");
+        // ファイルデータを作る
+        let file = NSData(contentsOf: imgUrl! as URL);
+        // イメージデータを作る
+        let img = UIImage(data:file! as Data)
+        
+        // イメージビューに表示する
+        bottomsimage.image = img
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.setupClothes()
+        self.setupBottoms()
     }
 
     override func didReceiveMemoryWarning() {
