@@ -13,14 +13,17 @@ import SDWebImage
 class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var homeImageView: UIImageView!
-    
+    @IBOutlet weak var OthersImageView: UIImageView!
+
     func setCell(cloth :Cloth) {
         
         homeImageView.sd_setImage(with: cloth.imageUrl as URL?)
         
-        
     }
     
+    func setCell2(cloth :Cloth) {
+
+        OthersImageView.sd_setImage(with: cloth.imageUrl as URL?)
     
-    
+    }
 }
