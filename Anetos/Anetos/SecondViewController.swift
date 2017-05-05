@@ -10,6 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
+    @IBOutlet weak var listButton: UIButton!
+    @IBOutlet weak var tagButton: UIButton!
+    @IBOutlet weak var registerDateButton: UIButton!
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -29,6 +32,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        listButton.layer.borderWidth = 2.0 // 枠線の幅
+        listButton.layer.borderColor = UIColor.orange.cgColor // 枠線の色
+        tagButton.layer.borderWidth = 2.0 // 枠線の幅
+        tagButton.layer.borderColor = UIColor.orange.cgColor // 枠線の色
+        registerDateButton.layer.borderWidth = 2.0 // 枠線の幅
+        registerDateButton.layer.borderColor = UIColor.orange.cgColor // 枠線の色
+        
         self.setupClothes()
         
     }
