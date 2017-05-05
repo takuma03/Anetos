@@ -12,6 +12,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
     
     var clothes:[Cloth] = [Cloth]()
     
+    @IBOutlet weak var TopsCollectionView: UICollectionView!
+    @IBOutlet weak var OthersCollectionView: UICollectionView!
+
+    @IBOutlet weak var bottomsimage: UIImageView!
+    
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -29,25 +34,69 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         return clothes.count
     }
     
+
     
-    //データを返すメソッド
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        //コレクションビューから識別子「TestCell」のセルを取得する。
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TestCell", for: indexPath) as! HomeCollectionViewCell
-        
-        //セルの背景色をランダムに設定する。
-        cell.backgroundColor = UIColor(red: CGFloat(drand48()),
-                                       green: CGFloat(drand48()),
-                                       blue: CGFloat(drand48()),
-                                       alpha: 1.0)
-        cell.setCell(cloth: clothes[indexPath.row])
-        print(indexPath.row)
-        return cell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == TopsCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopsCell", for: indexPath as IndexPath) as! HomeCollectionViewCell
+//            セルの背景色をランダムに設定する。
+                        cell.backgroundColor = UIColor(red: CGFloat(drand48()),
+                                                       green: CGFloat(drand48()),
+                                                       blue: CGFloat(drand48()),
+                                                       alpha: 1.0)
+                        cell.setCell(cloth: clothes[indexPath.row])
+            
+                        return cell
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OthersCell", for: indexPath as IndexPath) as! HomeCollectionViewCell
+            
+            
+                        cell.backgroundColor = UIColor(red: CGFloat(drand48()),
+                                                        green: CGFloat(drand48()),
+                                                        blue: CGFloat(drand48()),
+                                                        alpha: 1.0)
+            
+            
+                        cell.setCell2(cloth: clothes[indexPath.row])
+                        return cell
+        }
     }
     
+    //データを返すメソッド
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+//    {
+//        if indexPath.row == 0{
+//            //コレクションビューから識別子「TestCell」のセルを取得する。
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopsCell", for: indexPath) as! HomeCollectionViewCell
+//            
+//            //セルの背景色をランダムに設定する。
+//            cell.backgroundColor = UIColor(red: CGFloat(drand48()),
+//                                           green: CGFloat(drand48()),
+//                                           blue: CGFloat(drand48()),
+//                                           alpha: 1.0)
+//            cell.setCell(cloth: clothes[indexPath.row])
+//
+//            return cell
+//
+//        }
+//        else {
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OthersCell", for: indexPath) as! HomeCollectionViewCell
+//            
+//            
+//            cell.backgroundColor = UIColor(red: CGFloat(drand48()),
+//                                            green: CGFloat(drand48()),
+//                                            blue: CGFloat(drand48()),
+//                                            alpha: 1.0)
+//            
+//            
+//            cell.setCell2(cloth: clothes[indexPath.row])
+//            return cell
+//        }
+//    }
+ 
+    
      //ボトムスを表示させるメソッド
-    @IBOutlet weak var bottomsimage: UIImageView!
     func setupBottoms(){
         let imgUrl = NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=40");
         // ファイルデータを作る
@@ -63,6 +112,14 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        TopsCollectionView.delegate = self
+//        OthersCollectionView.delegate = self
+        
+        TopsCollectionView.dataSource = self
+        OthersCollectionView.dataSource = self
+        
+        self.view.addSubview(TopsCollectionView)
+        self.view.addSubview(OthersCollectionView)
         self.setupClothes()
         self.setupBottoms()
     }
@@ -74,4 +131,3 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
 
 
 }
-
