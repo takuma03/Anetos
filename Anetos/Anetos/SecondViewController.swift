@@ -16,7 +16,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    var clothes:[Cloth] = [Cloth]()
+    var clothes:[Cloth2] = [Cloth2]()
     
     // ActivityIndicator を用意
     var ActivityIndicator: UIActivityIndicatorView!
@@ -59,7 +59,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
         }else {
             for cloth_id in self.appDelegate.cloth_array{
-                let f = Cloth(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id))
+                let f = Cloth2(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id),tag: "1",register_date: "2017/06/17")
                 clothes.append(f)
             }
         }
@@ -77,7 +77,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
         let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath) as! CustomTableViewCell
-        cell.setCell(cloth: clothes[indexPath.row])
+        cell.setCell2(cloth: clothes[indexPath.row])
         print(indexPath.row)
         print(cell)
         return cell

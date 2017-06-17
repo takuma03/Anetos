@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anetos/LoginViewController.swift"
-            timestampString = "519381901.450937"
+            timestampString = "519384215.575014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "completionHandler1()"
             landmarkType = "7">
          </BreakpointContent>
