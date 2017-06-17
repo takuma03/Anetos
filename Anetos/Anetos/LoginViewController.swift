@@ -143,19 +143,35 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                     }
                     
                     print("response: \(response!)")
-                    var data: String = String(data: data!, encoding: .utf8)!
+                    let data: String = String(data: data!, encoding: .utf8)!
                     print("data:\(data)")
                     //文字列の加工
-                    data = data.replacingOccurrences(of: "[", with: "")
-                    data = data.replacingOccurrences(of: "{\"id\":", with: "")
-                    data = data.replacingOccurrences(of: "}", with: "")
-                    data = data.replacingOccurrences(of: "]", with: "")
+                    let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                    let json = JSON(data: dataToConvert!)
+                    print("jsonデータ")
+                    print(json["id"][0]["id"])
+                    print("jsonデータ要素数")
+                    print(json["id"].count)
+                    print("json型確認")
+                    print(type(of: json))
+                    
+                    
                     //配列にレスポンスデータを格納
-                    self.appDelegate.cloth_array = data.components(separatedBy: ",")
+                    //要素数分ループして配列に格納する
+                    for (key,subJson):(String, JSON) in json["id"] {
+                        //Do something you want
+                        print("key表示")
+                        print(key)
+                        print("subJson表示")
+                        print(subJson)
+                        print("subJsonのid表示")
+                        print(subJson["id"])
+                        self.appDelegate.cloth_array.append(subJson["id"].stringValue)
+                    }
+
                     print(self.appDelegate.cloth_array)
                     print(self.appDelegate.cloth_array.count)
                     self.completionHandler2()
-                    
                 })
                 //タスクを開始する
                 task.resume()
