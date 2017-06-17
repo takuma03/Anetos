@@ -148,14 +148,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                     //文字列の加工
                     let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
                     let json = JSON(data: dataToConvert!)
-                    print("jsonデータ")
-                    print(json["id"][0]["id"])
-                    print("jsonデータ要素数")
-                    print(json["id"].count)
-                    print("json型確認")
-                    print(type(of: json))
-                    
-                    
                     //配列にレスポンスデータを格納
                     //要素数分ループして配列に格納する
                     for (key,subJson):(String, JSON) in json["id"] {
@@ -166,11 +158,19 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                         print(subJson)
                         print("subJsonのid表示")
                         print(subJson["id"])
+                        //洋服IDを配列に格納
                         self.appDelegate.cloth_array.append(subJson["id"].stringValue)
+                        //洋服タグを配列に格納
+                        self.appDelegate.tag_id_array.append(subJson["tag_id"].stringValue)
+                        //洋服登録日を加工
+                        //【加工前】2017-05-05T08:04:30.791Z
+                        //【加工後】2017/05/05
+                        var register_date = subJson["created_at"].stringValue
+                        register_date = register_date.replacingOccurrences(of: "-", with: "/")
+                        var register_date_array = register_date.components(separatedBy: "T")
+                        //洋服登録日を配列に格納
+                        self.appDelegate.register_date_array.append(register_date_array[0])
                     }
-
-                    print(self.appDelegate.cloth_array)
-                    print(self.appDelegate.cloth_array.count)
                     self.completionHandler2()
                 })
                 //タスクを開始する
@@ -250,6 +250,47 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     func completionHandler4(){
+        DispatchQueue.main.async {
+            
+            
+            var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/tag")!)
+            //HTTPメソッドを設定する
+            request.httpMethod = "GET"
+            //タスクを作成する
+            let task = URLSession.shared.dataTask(with: request, completionHandler: {
+                (data, response, error) in
+                
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                
+                print("response: \(response!)")
+                let data: String = String(data: data!, encoding: .utf8)!
+                print("data:\(data)")
+                let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                let json = JSON(data: dataToConvert!)
+                //配列にレスポンスデータを格納
+                //要素数分ループして配列に格納する
+                for (key,subJson):(String, JSON) in json["tag"] {
+                    //Do something you want
+                    print("key表示")
+                    print(key)
+                    print("subJson表示")
+                    print(subJson)
+                    self.appDelegate.tag_list[subJson["id"].stringValue] = subJson["tag_name"].stringValue
+                    
+                }
+                self.completionHandler5()
+            })
+            //タスクを開始する
+            task.resume()
+            
+            
+        }
+    }
+    
+    func completionHandler5(){
         
         DispatchQueue.main.async {
             // クルクルストップ

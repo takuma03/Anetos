@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anetos/LoginViewController.swift"
-            timestampString = "519384215.575014"
+            timestampString = "519388039.694481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "176"
@@ -48,6 +48,22 @@
             startingLineNumber = "85"
             endingLineNumber = "85"
             landmarkName = "textFieldDidEndEditing(cell:value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anetos/LoginViewController.swift"
+            timestampString = "519388039.694481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "completionHandler1()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
