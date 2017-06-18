@@ -19,7 +19,6 @@ class Cloth : NSObject {
     }
 }
 
-
 class Cloth2 : NSObject {
     var imageUrl:NSURL?
     var tag:String
@@ -31,3 +30,13 @@ class Cloth2 : NSObject {
         self.register_date = register_date
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -1485,7 +1485,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="次へ"/>
                                 <connections>
-                                    <action selector="goNext:" destination="cTv-2L-BKl" eventType="touchUpInside" id="8l6-5W-Lab"/>
+                                    <segue destination="h8V-dy-xoP" kind="presentation" id="9t7-8Y-TMI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1499,6 +1499,41 @@
                 <exit id="RXt-oa-ECZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2305" y="674"/>
+        </scene>
+        <!--Take Picture View Controller-->
+        <scene sceneID="vwA-VJ-DAo">
+            <objects>
+                <viewController id="h8V-dy-xoP" customClass="TakePictureViewController" customModule="Anetos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wux-vP-2Co"/>
+                        <viewControllerLayoutGuide type="bottom" id="jhx-Wj-Bpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nhy-L1-7DI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AgU-wP-BKz">
+                                <rect key="frame" x="0.0" y="66" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAB-rK-dhP">
+                                <rect key="frame" x="172" y="536" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="撮影"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="h8V-dy-xoP" eventType="touchUpInside" id="jro-GC-Bx3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="AgU-wP-BKz" id="4g6-Z9-zen"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNc-3J-JKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080.8000000000002" y="670.61469265367316"/>
         </scene>
     </scenes>
     <resources>

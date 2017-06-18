@@ -16,6 +16,7 @@
 		0F0D365E1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */; };
 		0F0F38B81E98B9DE003AD46E /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */; };
 		0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */; };
+		0F108EDD1EF64BFC00247A0A /* TakePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */; };
 		0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */; };
 		0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */; };
 		0F6AD2261EA3506D00BB71A6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */; };
@@ -79,6 +80,7 @@
 		0F0D365D1E7FD6D300D0A3BE /* ChoiceBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBirthdayViewController.swift; sourceTree = "<group>"; };
 		0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
 		0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
+		0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePictureViewController.swift; sourceTree = "<group>"; };
 		0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewCell.swift; sourceTree = "<group>"; };
 		0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordTableViewCell.xib; sourceTree = "<group>"; };
 		0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
 				0FD62C851EAE295A0091F630 /* RegisterClothViewController.swift */,
 				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
+				0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */,
 				A1D807031E8673150021F55A /* ChoiceBotomsController.swift */,
 				A1D807051E8673580021F55A /* ChoiceOthersController.swift */,
 				0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */,
@@ -340,7 +343,7 @@
 				TargetAttributes = {
 					0FCC740E1E2BBE4C00935D3A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = B9626GLC3H;
+						DevelopmentTeam = R5V3YQ486T;
 						ProvisioningStyle = Automatic;
 					};
 					0FCC74241E2BBE4D00935D3A = {
@@ -574,6 +577,7 @@
 				0FF4E0B71E67FA7800469F28 /* FAQViewController.swift in Sources */,
 				0F776B591E9D0817009DA482 /* RegisterRegionViewController.swift in Sources */,
 				0FFBBC511E73C6B7008A43F7 /* ChangeUserViewController.swift in Sources */,
+				0F108EDD1EF64BFC00247A0A /* TakePictureViewController.swift in Sources */,
 				A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
 				0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */,
@@ -730,10 +734,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = B9626GLC3H;
+				DEVELOPMENT_TEAM = R5V3YQ486T;
 				INFOPLIST_FILE = Anetos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Anetos;
+				PRODUCT_BUNDLE_IDENTIFIER = Anetos.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Anetos-Bridging-Header.h";
@@ -747,10 +751,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = B9626GLC3H;
+				DEVELOPMENT_TEAM = R5V3YQ486T;
 				INFOPLIST_FILE = Anetos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Anetos;
+				PRODUCT_BUNDLE_IDENTIFIER = Anetos.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Anetos-Bridging-Header.h";
