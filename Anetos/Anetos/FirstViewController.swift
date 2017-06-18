@@ -17,6 +17,9 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
 
     @IBOutlet weak var bottomsimage: UIImageView!
     
+    @IBOutlet weak var home_region: UILabel!
+    
+    
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -117,6 +120,9 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         
         TopsCollectionView.dataSource = self
         OthersCollectionView.dataSource = self
+
+        //ユーザの地域名を取得
+        home_region.text = appDelegate.region
         
         self.view.addSubview(TopsCollectionView)
         self.view.addSubview(OthersCollectionView)
