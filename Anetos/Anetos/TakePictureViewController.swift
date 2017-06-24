@@ -28,10 +28,14 @@ extension UIImage {
     }
 }
 
-
-
-
 class TakePictureViewController: UIViewController, AVCapturePhotoCaptureDelegate {
+    
+    //AppDelegateのインスタンスを取得
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBAction func unwindToTakePicture(segue: UIStoryboardSegue){
+        
+    }
     
     var captureSesssion: AVCaptureSession!
     var stillImageOutput: AVCapturePhotoOutput?
@@ -94,7 +98,13 @@ class TakePictureViewController: UIViewController, AVCapturePhotoCaptureDelegate
             let image = UIImage(data: photoData!)
             
             // フォトライブラリに保存
-            UIImageWriteToSavedPhotosAlbum(image!.croppingToCenterSquare(), nil, nil, nil)
+            //UIImageWriteToSavedPhotosAlbum(image!.croppingToCenterSquare(), nil, nil, nil)
+            
+            //グローバル変数に撮影した画像を保存
+            self.appDelegate.picture = image
+            let storyboard: UIStoryboard = self.storyboard!
+            let nextView = storyboard.instantiateViewController(withIdentifier: "ConfirmPicture")
+            self.present(nextView, animated: true, completion: nil)
         }
     }
     

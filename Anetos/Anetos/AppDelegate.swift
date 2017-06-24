@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var sex: Int = 0                                //性別初期設定
     var birthday: String = ""                       //誕生日初期設定
     var region: String = ""                         //地域初期設定
-    
+    var picture: UIImage!                           //撮影した画像格納用変数初期設定
+
     //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -17,6 +17,7 @@
 		0F0F38B81E98B9DE003AD46E /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */; };
 		0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */; };
 		0F108EDD1EF64BFC00247A0A /* TakePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */; };
+		0F108EDF1EF6580D00247A0A /* ConfirmPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F108EDE1EF6580D00247A0A /* ConfirmPictureViewController.swift */; };
 		0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */; };
 		0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */; };
 		0F6AD2261EA3506D00BB71A6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */; };
@@ -81,6 +82,7 @@
 		0F0F38B61E98B9DE003AD46E /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
 		0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
 		0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePictureViewController.swift; sourceTree = "<group>"; };
+		0F108EDE1EF6580D00247A0A /* ConfirmPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPictureViewController.swift; sourceTree = "<group>"; };
 		0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewCell.swift; sourceTree = "<group>"; };
 		0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordTableViewCell.xib; sourceTree = "<group>"; };
 		0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -190,8 +192,9 @@
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
 				0FD62C851EAE295A0091F630 /* RegisterClothViewController.swift */,
-				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
+				0F108EDE1EF6580D00247A0A /* ConfirmPictureViewController.swift */,
 				0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */,
+				0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */,
 				A1D807031E8673150021F55A /* ChoiceBotomsController.swift */,
 				A1D807051E8673580021F55A /* ChoiceOthersController.swift */,
 				0F0CC2751E9A30880070A016 /* RegisterBirthdayViewController.swift */,
@@ -566,6 +569,7 @@
 				0FF4E0BB1E68006100469F28 /* InquiryViewController.swift in Sources */,
 				0F0CC2761E9A30880070A016 /* RegisterBirthdayViewController.swift in Sources */,
 				A1D807061E8673580021F55A /* ChoiceOthersController.swift in Sources */,
+				0F108EDF1EF6580D00247A0A /* ConfirmPictureViewController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
 				0FF4E0BD1E6809D900469F28 /* AboutViewController.swift in Sources */,

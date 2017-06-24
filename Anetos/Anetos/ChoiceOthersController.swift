@@ -10,6 +10,11 @@ import UIKit
 
 class ChoiceOthersViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBAction func unwindToChoice(segue: UIStoryboardSegue){
+    
+    }
+    
+    
     @IBOutlet weak var othersPicker: UIPickerView!
     
     
@@ -38,7 +43,6 @@ class ChoiceOthersViewController: UIViewController, UIPickerViewDelegate, UIPick
         // 選択したデータをグローバル変数に渡せていない気がする
         self.appDelegate.tag_name = "\(list[row])"
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
