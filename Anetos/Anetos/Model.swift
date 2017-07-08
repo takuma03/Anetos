@@ -29,7 +29,9 @@ class Cloth2 : NSObject {
         self.tag = tag
         self.register_date = register_date
     }
+    
 }
+
 
 
 

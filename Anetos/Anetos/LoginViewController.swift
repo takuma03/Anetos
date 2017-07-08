@@ -154,10 +154,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                         //Do something you want
                         print("key表示")
                         print(key)
-                        print("subJson表示")
-                        print(subJson)
-                        print("subJsonのid表示")
-                        print(subJson["id"])
                         //洋服IDを配列に格納
                         self.appDelegate.cloth_array.append(subJson["id"].stringValue)
                         //洋服タグを配列に格納
@@ -264,10 +260,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                     print(error!)
                     return
                 }
-                
-                print("response: \(response!)")
                 let data: String = String(data: data!, encoding: .utf8)!
-                print("data:\(data)")
                 let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
                 let json = JSON(data: dataToConvert!)
                 //配列にレスポンスデータを格納
@@ -276,8 +269,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                     //Do something you want
                     print("key表示")
                     print(key)
-                    print("subJson表示")
-                    print(subJson)
                     self.appDelegate.tag_list[subJson["id"].stringValue] = subJson["tag_name"].stringValue
                     
                 }
