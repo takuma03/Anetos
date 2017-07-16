@@ -21,10 +21,12 @@ class Cloth : NSObject {
 
 class Cloth2 : NSObject {
     var imageUrl:NSURL?
+    var id:String
     var tag:String
     var register_date:String
     
-    init(imageUrl: NSURL?,tag: String,register_date: String){
+    init(imageUrl: NSURL?,id: String,tag: String,register_date: String){
+        self.id = id
         self.imageUrl = imageUrl
         self.tag = tag
         self.register_date = register_date

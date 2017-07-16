@@ -68,7 +68,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }else {
             var i = 0
             for cloth_id in self.appDelegate.cloth_array{
-                let f = Cloth2(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id),tag: self.appDelegate.tag_list[self.appDelegate.tag_id_array[i]]! ,register_date: self.appDelegate.register_date_array[i])
+                let f = Cloth2(imageUrl: NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + cloth_id),id: self.appDelegate.cloth_array[i], tag: self.appDelegate.tag_list[self.appDelegate.tag_id_array[i]]! ,register_date: self.appDelegate.register_date_array[i])
                 clothes.append(f)
                 i = i + 1
             }

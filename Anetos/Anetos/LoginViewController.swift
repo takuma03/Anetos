@@ -99,6 +99,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         task.resume()
     }
     
+    //洋服情報を取得するための通信
     //通信が完了した後に実行する関数
     func completionHandler1(){
         
@@ -175,12 +176,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             }
         }
     }
-    
+    //ユーザー情報を取得するための通信
     //通信が完了した後に実行する関数
     func completionHandler2(){
         DispatchQueue.main.async {
-            
-                
             var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/users/" + self.appDelegate.user_name)!)
             //HTTPメソッドを設定する
             request.httpMethod = "GET"
@@ -215,7 +214,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
     }
     
-    
+    //地域情報を取得するための通信
     func completionHandler3(){
         DispatchQueue.main.async {
             var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/region/" + self.region_id)!)
@@ -244,11 +243,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
         }
     }
-    
+    //タグ情報を取得するための通信
     func completionHandler4(){
         DispatchQueue.main.async {
-            
-            
             var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/tag")!)
             //HTTPメソッドを設定する
             request.httpMethod = "GET"
@@ -281,7 +278,43 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    //推奨洋服情報を取得するための通信
     func completionHandler5(){
+        DispatchQueue.main.async {
+            var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/recommend/" + self.appDelegate.user_name)!)
+            //HTTPメソッドを設定する
+            request.httpMethod = "GET"
+            //タスクを作成する
+            let task = URLSession.shared.dataTask(with: request, completionHandler: {
+                (data, response, error) in
+                
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                
+                print("response: \(response!)")
+                let data: String = String(data: data!, encoding: .utf8)!
+                print("data:\(data)")
+                let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                let json = JSON(data: dataToConvert!)
+                print(json["sex"])
+                print(json["birthday"])
+                self.appDelegate.sex = json["sex"].intValue
+                let birthday = json["birthday"].stringValue
+                self.appDelegate.birthday = birthday.replacingOccurrences(of: "-", with: "/")
+                self.region_id = json["region_id"].stringValue
+                self.completionHandler6()
+            })
+            //タスクを開始する
+            task.resume()
+            
+            
+        }
+    }
+    
+    
+    func completionHandler6(){
         
         DispatchQueue.main.async {
             // クルクルストップ
