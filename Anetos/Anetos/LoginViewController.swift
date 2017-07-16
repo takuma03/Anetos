@@ -281,7 +281,36 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    //天気情報を取得するメソッド
     func completionHandler5(){
+        DispatchQueue.main.async {
+            
+            let url = URL(string: "http://52.193.213.154:3000/api/v1/weather/39")!
+            //↑後でユーザID取得する処理追加して40を+user_IDに変更
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                // 受け取ったdataをJSONパース、エラーならcatchへジャンプ
+                do {
+                    // dataをJSONパースし、グローバル変数"getJson"に格納
+                    self.appDelegate.getJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                    print(self.appDelegate.getJson )
+                    self.appDelegate.temperature =  (self.appDelegate.getJson ["temperature"] as? String)!
+                    self.appDelegate.weather =  (self.appDelegate.getJson ["weather"] as? String)!
+                    
+                  
+                } catch {
+                    print ("json error")
+                    return
+                }
+                self.completionHandler6()
+            }
+            task.resume()
+           
+            
+        }
+    
+    }
+
+    func completionHandler6(){
         
         DispatchQueue.main.async {
             // クルクルストップ
