@@ -19,9 +19,12 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
     
     @IBOutlet weak var home_region: UILabel!
     
+    @IBOutlet weak var temp: UILabel!
+    
     
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     
     func setupClothes() {
         //配列で取得したcloth_id分処理を繰り返す
@@ -66,39 +69,6 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         }
     }
     
-    //データを返すメソッド
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-//    {
-//        if indexPath.row == 0{
-//            //コレクションビューから識別子「TestCell」のセルを取得する。
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopsCell", for: indexPath) as! HomeCollectionViewCell
-//            
-//            //セルの背景色をランダムに設定する。
-//            cell.backgroundColor = UIColor(red: CGFloat(drand48()),
-//                                           green: CGFloat(drand48()),
-//                                           blue: CGFloat(drand48()),
-//                                           alpha: 1.0)
-//            cell.setCell(cloth: clothes[indexPath.row])
-//
-//            return cell
-//
-//        }
-//        else {
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OthersCell", for: indexPath) as! HomeCollectionViewCell
-//            
-//            
-//            cell.backgroundColor = UIColor(red: CGFloat(drand48()),
-//                                            green: CGFloat(drand48()),
-//                                            blue: CGFloat(drand48()),
-//                                            alpha: 1.0)
-//            
-//            
-//            cell.setCell2(cloth: clothes[indexPath.row])
-//            return cell
-//        }
-//    }
- 
-    
      //ボトムスを表示させるメソッド
     func setupBottoms(){
         let imgUrl = NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=40");
@@ -128,6 +98,8 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         self.view.addSubview(OthersCollectionView)
         self.setupClothes()
         self.setupBottoms()
+        //気温のLabel表示
+        self.temp.text = self.appDelegate.temperature
     }
 
     override func didReceiveMemoryWarning() {

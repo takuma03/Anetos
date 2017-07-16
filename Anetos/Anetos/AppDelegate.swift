@@ -24,7 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var birthday: String = ""                       //誕生日初期設定
     var region: String = ""                         //地域初期設定
     var picture: UIImage!                           //撮影した画像格納用変数初期設定
-
+    var getJson: NSDictionary!                      // 取得したJSONを格納するグローバル変数
+    var weather = ""                                //JSONで取得した天気を格納するグローバル変数
+    var temperature = ""                            //JSONで取得した気温を格納するグローバル変数
+    
     //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
