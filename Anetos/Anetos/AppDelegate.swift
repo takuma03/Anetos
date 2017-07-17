@@ -27,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var getJson: NSDictionary!                      // 取得したJSONを格納するグローバル変数
     var weather = ""                                //JSONで取得した天気を格納するグローバル変数
     var temperature = ""                            //JSONで取得した気温を格納するグローバル変数
+    var tops_cloth_array: Array<String> = []        //推奨トップス格納用配列
+    var bottoms_cloth: String = ""                  //推奨ボトムス格納用変数
+    var others_cloth_array: Array<String> = []      //推奨その他格納用配列
     
     //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

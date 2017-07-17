@@ -298,12 +298,36 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 print("data:\(data)")
                 let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
                 let json = JSON(data: dataToConvert!)
-                print(json["sex"])
-                print(json["birthday"])
-                self.appDelegate.sex = json["sex"].intValue
-                let birthday = json["birthday"].stringValue
-                self.appDelegate.birthday = birthday.replacingOccurrences(of: "-", with: "/")
-                self.region_id = json["region_id"].stringValue
+                for (key,subJson):(String, JSON) in json["id"] {
+                    //Do something you want
+                    print("key表示")
+                    print(key)
+                    print("subJson表示")
+                    //推奨洋服ID
+                    print(subJson["cloth_id"])
+//                    var request = URLRequest(url: URL(string: "http://52.193.213.154:3000/api/v1/recommend_large_class/" + subJson["cloth_id"].stringValue )!)
+//                    //HTTPメソッドを設定する
+//                    request.httpMethod = "GET"
+//                    //タスクを作成する
+//                    let task = URLSession.shared.dataTask(with: request, completionHandler: {
+//                        (data, response, error) in
+//                        
+//                        if error != nil {
+//                            print(error!)
+//                            return
+//                        }
+//                        let data: String = String(data: data!, encoding: .utf8)!
+//                        let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+//                        let json = JSON(data: dataToConvert!)
+//                        //配列にレスポンスデータを格納
+//                        //要素数分ループして配列に格納する
+//                        print(json)
+//                    })
+//                    //タスクを開始する
+//                    task.resume()
+
+                }
+                
                 self.completionHandler6()
             })
             //タスクを開始する
