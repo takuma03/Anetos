@@ -342,8 +342,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     func completionHandler6(){
         DispatchQueue.main.async {
             
-            let url = URL(string: "http://52.193.213.154:3000/api/v1/weather/39")!
-            //↑後でユーザID取得する処理追加して40を+user_IDに変更
+            let url = URL(string: "http://52.193.213.154:3000/api/v1/weather/" + self.appDelegate.user_name)!
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 // 受け取ったdataをJSONパース、エラーならcatchへジャンプ
                 do {
