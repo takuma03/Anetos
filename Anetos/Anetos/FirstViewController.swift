@@ -35,10 +35,36 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         switch w {
         case "thunderstorm with light rain","thunderstorm with rain","thunderstorm with heavy rain","light thunderstorm","thunderstorm","heavy thunderstorm","ragged thunderstorm","thunderstorm with light drizzle","thunderstorm with drizzle","thunderstorm with heavy drizzle":
             self.tenki.text = "雷雨"
-        case "light rain","moderate rain","heavy intensity rain","very heavy rain","extreme rain","freezing rain","heavy shower rain and drizzle":
+        case "light intensity drizzle":
+            self.tenki.text = "薄い霧"
+        case "drizzle","heavy intensity drizzle","light intensity drizzle rain","drizzle rain","heavy intensity drizzle rain","shower drizzle":
+            self.tenki.text = "霧雨"
+        case "heavy intensity drizzle":
+            self.tenki.text = "濃い霧"
+        case "light rain","moderate rain","heavy intensity rain","very heavy rain","extreme rain","freezing rain":
             self.tenki.text = "雨"
-        case "clear sky":
+        case "shower rain and drizzle","heavy shower rain and drizzle","light intensity shower rain","shower rain","heavy intensity shower rain","ragged shower rain","squalls":
+            self.tenki.text = "にわか雨"
+        case "light snow","snow","heavy snow","light shower snow","shower snow","heavy shower snow":
+            self.tenki.text = "雪"
+        case "sleet","shower sleet","light rain and snow","rain and snow":
+            self.tenki.text = "雨雪"
+        case "mist","smoke","haze","fog":
+            self.tenki.text = "霧"
+        case "sand, dust whirls","sand":
+            self.tenki.text = "砂塵"
+        case "dust":
+            self.tenki.text = "ほこり"
+        case "volcanic ash":
+            self.tenki.text = "火山灰"
+        case "tornado":
+            self.tenki.text = "竜巻"
+        case "clear sky","few clouds":
             self.tenki.text = "晴れ"
+        case "scattered clouds","broken clouds":
+            self.tenki.text = "くもり"
+        case "overcast clouds":
+            self.tenki.text = "くもり"
         default:
             print("それ以外")
         }
