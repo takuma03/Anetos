@@ -47,6 +47,15 @@
 		0FFBBC531E73C9DE008A43F7 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFBBC521E73C9DE008A43F7 /* ChangePasswordViewController.swift */; };
 		0FFBBC551E73CBA0008A43F7 /* ChangeMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFBBC541E73CBA0008A43F7 /* ChangeMailViewController.swift */; };
 		7E985F61950256A03949FDD9 /* Pods_AnetosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0861798FF652782EBF2D5382 /* Pods_AnetosTests.framework */; };
+		A1198A871F1C8A3500CADEEB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A7E1F1C8A3500CADEEB /* 1.png */; };
+		A1198A881F1C8A3500CADEEB /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A7F1F1C8A3500CADEEB /* 2.png */; };
+		A1198A891F1C8A3500CADEEB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A801F1C8A3500CADEEB /* 3.png */; };
+		A1198A8A1F1C8A3500CADEEB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A811F1C8A3500CADEEB /* 4.png */; };
+		A1198A8B1F1C8A3500CADEEB /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A821F1C8A3500CADEEB /* 5.png */; };
+		A1198A8C1F1C8A3500CADEEB /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A831F1C8A3500CADEEB /* 6.png */; };
+		A1198A8D1F1C8A3500CADEEB /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A841F1C8A3500CADEEB /* 7.png */; };
+		A1198A8E1F1C8A3500CADEEB /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A851F1C8A3500CADEEB /* 8.png */; };
+		A1198A8F1F1C8A3500CADEEB /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = A1198A861F1C8A3500CADEEB /* 9.png */; };
 		A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D807031E8673150021F55A /* ChoiceBotomsController.swift */; };
 		A1D807061E8673580021F55A /* ChoiceOthersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D807051E8673580021F55A /* ChoiceOthersController.swift */; };
 		A66C204013758CD2E9A6B58F /* Pods_AnetosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC87AC2995ED449FFE6FC83 /* Pods_AnetosUITests.framework */; };
@@ -124,6 +133,15 @@
 		80D15F63B7A9E777E4B7FC94 /* Pods-AnetosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosTests/Pods-AnetosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9572831A63523F6BAEE5F371 /* Pods-Anetos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anetos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anetos/Pods-Anetos.release.xcconfig"; sourceTree = "<group>"; };
 		9B8ABBF454E8B51533223414 /* Pods_Anetos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anetos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1198A7E1F1C8A3500CADEEB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/1.png"; sourceTree = "<group>"; };
+		A1198A7F1F1C8A3500CADEEB /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/2.png"; sourceTree = "<group>"; };
+		A1198A801F1C8A3500CADEEB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/3.png"; sourceTree = "<group>"; };
+		A1198A811F1C8A3500CADEEB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/4.png"; sourceTree = "<group>"; };
+		A1198A821F1C8A3500CADEEB /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/5.png"; sourceTree = "<group>"; };
+		A1198A831F1C8A3500CADEEB /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/6.png"; sourceTree = "<group>"; };
+		A1198A841F1C8A3500CADEEB /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/7.png"; sourceTree = "<group>"; };
+		A1198A851F1C8A3500CADEEB /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/8.png"; sourceTree = "<group>"; };
+		A1198A861F1C8A3500CADEEB /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = "../../../../../Google Drive/第1回ハッカソン/03_検討資料/天気画像/9.png"; sourceTree = "<group>"; };
 		A1D807031E8673150021F55A /* ChoiceBotomsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceBotomsController.swift; sourceTree = "<group>"; };
 		A1D807051E8673580021F55A /* ChoiceOthersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceOthersController.swift; sourceTree = "<group>"; };
 		DA2CF39847B1A9C0BD38EE34 /* Pods-AnetosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnetosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnetosUITests/Pods-AnetosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +202,15 @@
 		0FCC74111E2BBE4D00935D3A /* Anetos */ = {
 			isa = PBXGroup;
 			children = (
+				A1198A7E1F1C8A3500CADEEB /* 1.png */,
+				A1198A7F1F1C8A3500CADEEB /* 2.png */,
+				A1198A801F1C8A3500CADEEB /* 3.png */,
+				A1198A811F1C8A3500CADEEB /* 4.png */,
+				A1198A821F1C8A3500CADEEB /* 5.png */,
+				A1198A831F1C8A3500CADEEB /* 6.png */,
+				A1198A841F1C8A3500CADEEB /* 7.png */,
+				A1198A851F1C8A3500CADEEB /* 8.png */,
+				A1198A861F1C8A3500CADEEB /* 9.png */,
 				0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */,
 				0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */,
 				0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */,
@@ -386,12 +413,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1198A8B1F1C8A3500CADEEB /* 5.png in Resources */,
+				A1198A8D1F1C8A3500CADEEB /* 7.png in Resources */,
 				0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */,
+				A1198A8F1F1C8A3500CADEEB /* 9.png in Resources */,
 				0FCC741F1E2BBE4D00935D3A /* LaunchScreen.storyboard in Resources */,
+				A1198A881F1C8A3500CADEEB /* 2.png in Resources */,
+				A1198A891F1C8A3500CADEEB /* 3.png in Resources */,
+				A1198A8E1F1C8A3500CADEEB /* 8.png in Resources */,
 				0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */,
+				A1198A8C1F1C8A3500CADEEB /* 6.png in Resources */,
 				0FCC741C1E2BBE4D00935D3A /* Assets.xcassets in Resources */,
 				0FCC741A1E2BBE4D00935D3A /* Main.storyboard in Resources */,
 				0F0C5A571EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.xib in Resources */,
+				A1198A8A1F1C8A3500CADEEB /* 4.png in Resources */,
+				A1198A871F1C8A3500CADEEB /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

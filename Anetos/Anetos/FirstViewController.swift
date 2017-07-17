@@ -35,36 +35,52 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         switch w {
         case "thunderstorm with light rain","thunderstorm with rain","thunderstorm with heavy rain","light thunderstorm","thunderstorm","heavy thunderstorm","ragged thunderstorm","thunderstorm with light drizzle","thunderstorm with drizzle","thunderstorm with heavy drizzle":
             self.tenki.text = "雷雨"
+            weather_img.image = UIImage(named:"1.png")
         case "light intensity drizzle":
             self.tenki.text = "薄い霧"
+            weather_img.image = UIImage(named:"2.png")
         case "drizzle","heavy intensity drizzle","light intensity drizzle rain","drizzle rain","heavy intensity drizzle rain","shower drizzle":
             self.tenki.text = "霧雨"
+            weather_img.image = UIImage(named:"2.png")
         case "heavy intensity drizzle":
             self.tenki.text = "濃い霧"
+            weather_img.image = UIImage(named:"2.png")
         case "light rain","moderate rain","heavy intensity rain","very heavy rain","extreme rain","freezing rain":
             self.tenki.text = "雨"
+            weather_img.image = UIImage(named:"3.png")
         case "shower rain and drizzle","heavy shower rain and drizzle","light intensity shower rain","shower rain","heavy intensity shower rain","ragged shower rain","squalls":
             self.tenki.text = "にわか雨"
+            weather_img.image = UIImage(named:"3.png")
         case "light snow","snow","heavy snow","light shower snow","shower snow","heavy shower snow":
             self.tenki.text = "雪"
+            weather_img.image = UIImage(named:"4.png")
         case "sleet","shower sleet","light rain and snow","rain and snow":
-            self.tenki.text = "雨雪"
+            self.tenki.text = "みぞれ"
+            weather_img.image = UIImage(named:"5.png")
         case "mist","smoke","haze","fog":
             self.tenki.text = "霧"
+            weather_img.image = UIImage(named:"6.png")
         case "sand, dust whirls","sand":
             self.tenki.text = "砂塵"
+            weather_img.image = UIImage(named:"6.png")
         case "dust":
             self.tenki.text = "ほこり"
+            weather_img.image = UIImage(named:"6.png")
         case "volcanic ash":
             self.tenki.text = "火山灰"
+            weather_img.image = UIImage(named:"6.png")
         case "tornado":
             self.tenki.text = "竜巻"
+            weather_img.image = UIImage(named:"6.png")
         case "clear sky","few clouds":
             self.tenki.text = "晴れ"
+            weather_img.image = UIImage(named:"7.png")
         case "scattered clouds","broken clouds":
             self.tenki.text = "くもり"
+            weather_img.image = UIImage(named:"8.png")
         case "overcast clouds":
             self.tenki.text = "くもり"
+            weather_img.image = UIImage(named:"9.png")
         default:
             print("それ以外")
         }
