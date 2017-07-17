@@ -326,8 +326,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                     // dataをJSONパースし、グローバル変数"getJson"に格納
                     self.appDelegate.getJson = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
                     print(self.appDelegate.getJson )
-                    self.appDelegate.temperature =  (self.appDelegate.getJson ["temperature"] as? String)!
-                    self.appDelegate.weather =  (self.appDelegate.getJson ["weather"] as? String)!
+                    let temps = (self.appDelegate.getJson ["temperature"] as? String)!
+                    let tempd: Double = NSString(string: temps).doubleValue
+                    let temp = round(tempd*10)/10
+//                    self.appDelegate.temperature =  (self.appDelegate.getJson ["temperature"] as? String)!
+                    self.appDelegate.temperature = temp.description
+                    self.appDelegate.weather = (self.appDelegate.getJson ["weather"] as? String)!
                     
                   
                 } catch {

@@ -21,11 +21,28 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
     
     @IBOutlet weak var temp: UILabel!
     
+    @IBOutlet weak var tenki: UILabel!
+    
+    @IBOutlet weak var weather_img: UIImageView!
+    
     
     //AppDelegateのインスタンスを取得
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    
+    //天気表示用のメソッド
+    func weather(){
+        let w = self.appDelegate.weather
+        switch w {
+        case "thunderstorm with light rain","thunderstorm with rain","thunderstorm with heavy rain","light thunderstorm","thunderstorm","heavy thunderstorm","ragged thunderstorm","thunderstorm with light drizzle","thunderstorm with drizzle","thunderstorm with heavy drizzle":
+            self.tenki.text = "雷雨"
+        case "light rain","moderate rain","heavy intensity rain","very heavy rain","extreme rain","freezing rain","heavy shower rain and drizzle":
+            self.tenki.text = "雨"
+        case "clear sky":
+            self.tenki.text = "晴れ"
+        default:
+            print("それ以外")
+        }
+    }
     func setupClothes() {
         //配列で取得したcloth_id分処理を繰り返す
         for cloth_id in self.appDelegate.cloth_array{
@@ -98,8 +115,9 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
         self.view.addSubview(OthersCollectionView)
         self.setupClothes()
         self.setupBottoms()
+        self.weather()
         //気温のLabel表示
-        self.temp.text = self.appDelegate.temperature
+        self.temp.text = self.appDelegate.temperature + "℃"
     }
 
     override func didReceiveMemoryWarning() {
