@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UICollectionViewDataSource{
+class FirstViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     var tops_clothes:[Cloth] = [Cloth]()
     var others_clothes:[Cloth] = [Cloth]()
@@ -115,6 +115,37 @@ class FirstViewController: UIViewController, UICollectionViewDataSource{
                         cell.setCell2(cloth: others_clothes[indexPath.row])
                         return cell
         }
+    }
+    
+    //UICollectionViewDelegateFlowLayoutに定義されたメソッド
+    //セクションごとに上下左右の余白を示すUIEdgeInsetsを返す
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        print("test")
+        guard
+            let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout,
+            case let numItems = collectionView.numberOfItems(inSection: section), numItems > 0
+            else {
+                return .zero
+        }
+        
+        //1セクション分の表示幅の計算(セルを可変サイズにする場合などは要修正)
+        let minSpacing = flowLayout.minimumInteritemSpacing
+        let itemWidth = flowLayout.itemSize.width
+        let minSectionWidth = itemWidth * CGFloat(numItems) + minSpacing * CGFloat(numItems-1)
+        
+        //CollectionViewのコンテンツ領域の幅の計算
+        let contentWidth = collectionView.frame.size.width - collectionView.contentInset.left - collectionView.contentInset.right
+        
+        //デフォルトのInsetsの取得
+        var insets = flowLayout.sectionInset
+        //セクションの表示幅がコンテンツ領域より小さい時には余白を計算
+        if minSectionWidth < contentWidth {
+            let paddingWidth = (contentWidth - minSectionWidth)/2
+            insets.left = paddingWidth
+            insets.right = paddingWidth
+        }
+        return insets
     }
     
   
