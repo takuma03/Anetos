@@ -94,20 +94,20 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3bK-ZX-GEZ">
                                     <size key="itemSize" width="114" height="126"/>
-                                    <size key="headerReferenceSize" width="121" height="0.0"/>
+                                    <size key="headerReferenceSize" width="241" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OthersCell" id="yzN-fB-0va" customClass="HomeCollectionViewCell" customModule="Anetos" customModuleProvider="target">
-                                        <rect key="frame" x="121" y="1" width="114" height="126"/>
+                                        <rect key="frame" x="241" y="1" width="114" height="126"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="114" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fQ-YD-bYF">
-                                                    <rect key="frame" x="8" y="8" width="105" height="101"/>
+                                                    <rect key="frame" x="3.5563903638130796" y="12.765778410871917" width="104.99999999999989" height="101"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -118,7 +118,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PRc-k7-XmH">
-                                    <rect key="frame" x="0.0" y="0.0" width="121" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="241" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
                                 <connections>
