@@ -183,6 +183,25 @@ class FirstViewController: UIViewController, UICollectionViewDataSource,UICollec
         self.weather()
         //気温のLabel表示
         self.temp.text = self.appDelegate.temperature + "℃"
+        
+        //洋服が登録されていない場合の処理
+        if self.appDelegate.cloth_array.isEmpty{
+            // ボタンのサイズを定義.
+            let bWidth: CGFloat = 300
+            let bHeight: CGFloat = 300
+            // 配置する座標を定義(画面の中心).
+            let posX: CGFloat = self.view.bounds.width/2 - bWidth/2
+            let posY: CGFloat = self.view.bounds.height/2 - bHeight/2
+            // Labelを作成.
+            let label: UILabel = UILabel(frame: CGRect(x: posX, y: posY, width: bWidth, height: bHeight))
+            // UILabelに文字を代入.
+            label.numberOfLines = 3
+            label.text = "洋服が登録されていないため、\n本日のおすすめはありません。\n洋服を登録してください。"
+            // Textを中央寄せにする.
+            label.textAlignment = NSTextAlignment.center
+            // ViewにLabelを追加.
+            self.view.addSubview(label)
+        }
     }
 
     override func didReceiveMemoryWarning() {
