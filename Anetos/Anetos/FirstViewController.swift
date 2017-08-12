@@ -151,6 +151,10 @@ class FirstViewController: UIViewController, UICollectionViewDataSource,UICollec
   
      //ボトムスを表示させるメソッド
     func setupBottoms(){
+        if self.appDelegate.bottoms_cloth == "" {
+            return
+        }
+        
         let imgUrl = NSURL(string: "http://52.193.213.154:3000/clothes/get_image?id=" + self.appDelegate.bottoms_cloth);
         // ファイルデータを作る
         let file = NSData(contentsOf: imgUrl! as URL);

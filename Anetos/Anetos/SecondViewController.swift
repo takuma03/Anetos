@@ -63,8 +63,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func setupClothes() {
         //配列で取得したcloth_id分処理を繰り返す
         //配列が空の場合は処理させない
-        if self.appDelegate.cloth_array[0].isEmpty {
-            
+        if self.appDelegate.cloth_array.isEmpty {
+
         }else {
             var i = 0
             for cloth_id in self.appDelegate.cloth_array{
@@ -173,15 +173,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tagList = orderedSet.array as! [String]
         print("tagList表示")
         print(tagList)
-        var i = 0
-        for tag in tagList {
-            for cloth in clothes{
-                if tag == cloth.tag{
-                    tag_clothes.append([Cloth2]())
-                    tag_clothes[i].append(cloth)
+        
+        //tag_clothes配列が空の場合に洋服追加
+        if tag_clothes.isEmpty {
+            var i = 0
+            for tag in tagList {
+                for cloth in clothes{
+                    if tag == cloth.tag{
+                        tag_clothes.append([Cloth2]())
+                        tag_clothes[i].append(cloth)
+                    }
                 }
+                i = i + 1
             }
-            i = i + 1
         }
         
         
@@ -189,6 +193,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         dump(clothes)
         print("tag_clothes表示")
         dump(tag_clothes)
+        print(type(of: tag_clothes))
         self.closetTableView.reloadData()
     }
     //登録日ボタン押下時の処理
@@ -207,15 +212,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         registerDateList = orderedSet.array as! [String]
         print("registerDateList表示")
         print(registerDateList)
-        var i = 0
-        for registerDate in registerDateList {
-            for cloth in clothes{
-                if registerDate == cloth.register_date{
-                    register_date_clothes.append([Cloth2]())
-                    register_date_clothes[i].append(cloth)
+        
+        //register_date_clothes配列が空だった場合に洋服追加
+        if register_date_clothes.isEmpty{
+            var i = 0
+            for registerDate in registerDateList {
+                for cloth in clothes{
+                    if registerDate == cloth.register_date{
+                        register_date_clothes.append([Cloth2]())
+                        register_date_clothes[i].append(cloth)
+                    }
                 }
+                i = i + 1
             }
-            i = i + 1
         }
         
         

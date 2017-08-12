@@ -290,7 +290,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 
                 if error != nil {
                     print(error!)
-                    return
                 }
                 
                 print("response: \(response!)")
@@ -298,6 +297,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 print("data:\(data)")
                 let dataToConvert = data.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
                 let json = JSON(data: dataToConvert!)
+                print(json["id"])
+                if json["id"] == " " {
+                    print("推奨洋服がありません。")
+                }
+
                 for (key,subJson):(String, JSON) in json["id"] {
                     //Do something you want
                     print("key表示")
