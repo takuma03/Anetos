@@ -23,6 +23,7 @@
 		0F6AD2261EA3506D00BB71A6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */; };
 		0F7325A61E2CF02F002C66D9 /* ChoiceTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */; };
 		0F776B591E9D0817009DA482 /* RegisterRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */; };
+		0F9D265E1F5294F0000D31C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F9D265D1F5294F0000D31C6 /* GoogleService-Info.plist */; };
 		0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */; };
 		0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */; };
 		0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC74161E2BBE4D00935D3A /* SecondViewController.swift */; };
@@ -97,6 +98,7 @@
 		0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F7325A51E2CF02F002C66D9 /* ChoiceTopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTopsViewController.swift; sourceTree = "<group>"; };
 		0F776B581E9D0817009DA482 /* RegisterRegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRegionViewController.swift; sourceTree = "<group>"; };
+		0F9D265D1F5294F0000D31C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FCC740F1E2BBE4D00935D3A /* Anetos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anetos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				A1198A861F1C8A3500CADEEB /* 9.png */,
 				0FCC74121E2BBE4D00935D3A /* AppDelegate.swift */,
 				0FCC74141E2BBE4D00935D3A /* FirstViewController.swift */,
+				0F9D265D1F5294F0000D31C6 /* GoogleService-Info.plist */,
 				0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */,
 				0FCC74161E2BBE4D00935D3A /* SecondViewController.swift */,
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
@@ -422,6 +425,7 @@
 				A1198A891F1C8A3500CADEEB /* 3.png in Resources */,
 				A1198A8E1F1C8A3500CADEEB /* 8.png in Resources */,
 				0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */,
+				0F9D265E1F5294F0000D31C6 /* GoogleService-Info.plist in Resources */,
 				A1198A8C1F1C8A3500CADEEB /* 6.png in Resources */,
 				0FCC741C1E2BBE4D00935D3A /* Assets.xcassets in Resources */,
 				0FCC741A1E2BBE4D00935D3A /* Main.storyboard in Resources */,

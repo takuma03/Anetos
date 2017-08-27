@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Anetos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,20 +34,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>nanopb.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4631DFDF0311EE28EC79A7D03D0C168F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>575A47B3E82E707F548C1464ACAB11FF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6174F09C7D321633B6BDA791849BDA0E</key>
+		<key>00103D6C821BE85971C563025527BA5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +53,26 @@
 			<true/>
 		</dict>
 		<key>A81ED027BDC90FD1A1CCD717202DE190</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6A90D4903DA7DEC598B741ABC406021</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E07055498DFC7D88CF5955F98EE7D62C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9D7FE78625854E62997A56AA56C48CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

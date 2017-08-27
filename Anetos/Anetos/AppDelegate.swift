@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMobileAds
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,6 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //初回ログイン時の処理
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3212052928179442~4752557794")
         
         //windowを生成
         self.window = UIWindow(frame: UIScreen.main.bounds)

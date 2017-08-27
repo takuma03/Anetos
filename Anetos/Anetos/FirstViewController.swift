@@ -196,7 +196,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource,UICollec
             let label: UILabel = UILabel(frame: CGRect(x: posX, y: posY, width: bWidth, height: bHeight))
             // UILabelに文字を代入.
             label.numberOfLines = 3
-            label.text = "洋服が登録されていないため、\n本日のおすすめはありません。\n洋服を登録してください。"
+            label.text = "洋服が登録されていないため、\n本日のおすすめはありません。\n洋服を登録してください。  "
             // Textを中央寄せにする.
             label.textAlignment = NSTextAlignment.center
             // ViewにLabelを追加.
