@@ -18,6 +18,9 @@
 		0F0F38B91E98B9DE003AD46E /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */; };
 		0F108EDD1EF64BFC00247A0A /* TakePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */; };
 		0F108EDF1EF6580D00247A0A /* ConfirmPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F108EDE1EF6580D00247A0A /* ConfirmPictureViewController.swift */; };
+		0F3702A31F5BFA9900289FBF /* ForgetUserIDandPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3702A21F5BFA9900289FBF /* ForgetUserIDandPasswordViewController.swift */; };
+		0F3702A51F5BFC7600289FBF /* ForgetUserIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3702A41F5BFC7600289FBF /* ForgetUserIDViewController.swift */; };
+		0F3702A71F5BFCBE00289FBF /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3702A61F5BFCBE00289FBF /* ForgetPasswordViewController.swift */; };
 		0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */; };
 		0F633F8A1E891BAC00263D89 /* ChangePasswordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */; };
 		0F6AD2261EA3506D00BB71A6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */; };
@@ -93,6 +96,9 @@
 		0F0F38B71E98B9DE003AD46E /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
 		0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePictureViewController.swift; sourceTree = "<group>"; };
 		0F108EDE1EF6580D00247A0A /* ConfirmPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPictureViewController.swift; sourceTree = "<group>"; };
+		0F3702A21F5BFA9900289FBF /* ForgetUserIDandPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetUserIDandPasswordViewController.swift; sourceTree = "<group>"; };
+		0F3702A41F5BFC7600289FBF /* ForgetUserIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetUserIDViewController.swift; sourceTree = "<group>"; };
+		0F3702A61F5BFCBE00289FBF /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		0F633F871E891BAC00263D89 /* ChangePasswordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewCell.swift; sourceTree = "<group>"; };
 		0F633F881E891BAC00263D89 /* ChangePasswordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordTableViewCell.xib; sourceTree = "<group>"; };
 		0F6AD2251EA3506D00BB71A6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -221,6 +227,9 @@
 				0FDF4D241E5DB63200A23742 /* CustomTableViewCell.swift */,
 				0FDF4D261E5DB7B500A23742 /* Model.swift */,
 				0FCC74181E2BBE4D00935D3A /* Main.storyboard */,
+				0F3702A61F5BFCBE00289FBF /* ForgetPasswordViewController.swift */,
+				0F3702A41F5BFC7600289FBF /* ForgetUserIDViewController.swift */,
+				0F3702A21F5BFA9900289FBF /* ForgetUserIDandPasswordViewController.swift */,
 				0FD62C851EAE295A0091F630 /* RegisterClothViewController.swift */,
 				0F108EDE1EF6580D00247A0A /* ConfirmPictureViewController.swift */,
 				0F108EDC1EF64BFC00247A0A /* TakePictureViewController.swift */,
@@ -612,9 +621,11 @@
 				0F108EDF1EF6580D00247A0A /* ConfirmPictureViewController.swift in Sources */,
 				0FCC74431E2BC83400935D3A /* TopViewController.swift in Sources */,
 				0FCC74171E2BBE4D00935D3A /* SecondViewController.swift in Sources */,
+				0F3702A31F5BFA9900289FBF /* ForgetUserIDandPasswordViewController.swift in Sources */,
 				0FF4E0BD1E6809D900469F28 /* AboutViewController.swift in Sources */,
 				0FF4E0B91E67FED400469F28 /* GuideViewController.swift in Sources */,
 				0FDF4D271E5DB7B500A23742 /* Model.swift in Sources */,
+				0F3702A71F5BFCBE00289FBF /* ForgetPasswordViewController.swift in Sources */,
 				0FCC74131E2BBE4D00935D3A /* AppDelegate.swift in Sources */,
 				0FCC74471E2BCA0B00935D3A /* RegisterViewController.swift in Sources */,
 				0F0C5A561EB5ABA200F0CE0E /* ChangeMailViewTableViewCell.swift in Sources */,
@@ -625,6 +636,7 @@
 				A1D807041E8673150021F55A /* ChoiceBotomsController.swift in Sources */,
 				0FCC74451E2BC9C100935D3A /* LoginViewController.swift in Sources */,
 				0FCC74151E2BBE4D00935D3A /* FirstViewController.swift in Sources */,
+				0F3702A51F5BFC7600289FBF /* ForgetUserIDViewController.swift in Sources */,
 				0F0F38B81E98B9DE003AD46E /* RegisterTableViewCell.swift in Sources */,
 				0F633F891E891BAC00263D89 /* ChangePasswordTableViewCell.swift in Sources */,
 			);
