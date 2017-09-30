@@ -9,15 +9,15 @@
 import UIKit
 
 class ForgetPasswordViewController: UIViewController {
+
+    @IBOutlet weak var webView: UIWebView!
     
-    @IBOutlet weak var messageLabel: UILabel!
+    var targetURL = "http://52.193.213.154:3000/users/password/new"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        messageLabel.numberOfLines = 4
-        messageLabel.text = "パスワードをお忘れの方は登録されているメールアドレスを入力してください。登録されているメールアドレスにパスワード変更用の情報を送信いたします。"
-        
+        loadAddressURL()
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,10 +25,11 @@ class ForgetPasswordViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    //パスワードを忘れた際にメールアドレスを送信する処理
-    @IBAction func sendMail(_ sender: UIButton) {
+    func loadAddressURL() {
         
+        let url: NSURL = NSURL(string: targetURL)!
+        let urlRequest = NSURLRequest(url: url as URL)
+        webView.loadRequest(urlRequest as URLRequest)
     }
  
 }

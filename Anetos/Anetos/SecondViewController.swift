@@ -139,9 +139,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // Cell が選択された場合
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         // EditCellViewController へ遷移するために Segue を呼び出す
-        print(self.appDelegate.cloth_array[indexPath.row])
-        selectedId = self.appDelegate.cloth_array[indexPath.row]
-        performSegue(withIdentifier: "toEditCellViewController",sender: nil)
+        if frag == 0{
+            print(self.appDelegate.cloth_array[indexPath.row])
+            selectedId = self.appDelegate.cloth_array[indexPath.row]
+            performSegue(withIdentifier: "toEditCellViewController",sender: nil)
+        } else if frag == 1 {
+            print(self.tag_clothes[indexPath.section][indexPath.row].id)
+            selectedId = self.tag_clothes[indexPath.section][indexPath.row].id
+            performSegue(withIdentifier: "toEditCellViewController",sender: nil)
+        } else {
+            print(self.register_date_clothes[indexPath.section][indexPath.row].id)
+            selectedId = self.register_date_clothes[indexPath.section][indexPath.row].id
+            performSegue(withIdentifier: "toEditCellViewController",sender: nil)
+        }
     }
     
     // Segue 準備
@@ -192,7 +202,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         print("clothes表示")
         dump(clothes)
         print("tag_clothes表示")
-        dump(tag_clothes)
+        print(tag_clothes[0][0].id)
         print(type(of: tag_clothes))
         self.closetTableView.reloadData()
     }
